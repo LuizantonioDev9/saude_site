@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atendimento ao Paciente</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .block {
+      display: flex;
+      position: relative;
+      margin-bottom: 40px;
+      animation: slide-in 1s ease-in-out forwards;
+    }
+    .block:nth-child(odd) {
+      justify-content: flex-start; /* Alinha mais à esquerda */
+      animation-name: slide-in-left;
+    }
+    .block:nth-child(even) {
+      justify-content: flex-end; /* Alinha mais à direita */
+      animation-name: slide-in-right;
+      flex-direction: row-reverse; /* Inverte a ordem do texto e da imagem */
+    }
+    .image-container {
+      width: 40%;
+      border: 2px dashed #ccc;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+    }
+    .text-container {
+      width: 50%;
+      padding-left: 20px;
+    }
+    h1 {
+      font-size: 24px;
+      color: #333;
+    }
+    p {
+      font-size: 16px;
+      color: #555;
+    }
+    /* Animações */
+    @keyframes slide-in-left {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slide-in-right {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Testando</h2>
+  <div class="container">
+    <!-- Primeiro bloco: imagem à esquerda, texto à direita -->
+    <div class="block">
+      <div class="image-container">
+        <p>Espaço para a imagem</p>
+      </div>
+      <div class="text-container">
+        <h1>ATENDIMENTO AO PACIENTE <span>🩺</span></h1>
+        <p>O SSWEB possui funções que facilitam e agilizam o processo de coleta das amostras. Esses processos fazem com que seu atendimento seja rápido, evitando filas e organizando amostras de maneira fácil para serem analisadas.</p>
+        <p>É possível fazer coletas no local, organizando as amostras para emissão dos resultados.</p>
+        <p>Todas as amostras podem ser identificadas através de códigos de barras, organizadas por setores de resultados, além da possibilidade de impressão da ficha de bancada.</p>
+      </div>
+    </div>
+
+    
+
+    <!-- Segundo bloco: imagem à direita, texto à esquerda -->
+    <div class="block">
+      <div class="image-container">
+        <p><img src="./assets/mockups/atend2.png" width="450" height="250" alt=""></p>
+      </div>
+      <div class="text-container">
+        <h1>ATENDIMENTO AO PACIENTE <span>🩺</span></h1>
+        <p>O SSWEB possui funções que facilitam e agilizam o processo de coleta das amostras. Esses processos fazem com que seu atendimento seja rápido, evitando filas e organizando amostras de maneira fácil para serem analisadas.</p>
+        <p>É possível fazer coletas no local, organizando as amostras para emissão dos resultados.</p>
+        <p>Todas as amostras podem ser identificadas através de códigos de barras, organizadas por setores de resultados, além da possibilidade de impressão da ficha de bancada.</p>
+      </div>
+
+      
+     
+    </div>
+  </div>
+</body>
+</html>

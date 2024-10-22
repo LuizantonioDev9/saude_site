@@ -1,4 +1,49 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSLAB</title>
+    <link rel="stylesheet" href="sobre.css">
+</head>
+<body>
+    <div class="container">
+     <!-- Seção de vídeo (com imagem e ícone de play) -->
+<div class="video-section">
+    <img src="sua-imagem.jpg" alt="Clique para assistir" class="video-placeholder" onclick="openVideo()">
+    <div class="play-icon" onclick="openVideo()"></div>
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeVideo()">&times;</span>
+            <iframe width="800" height="450" id="popup-video" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Seção de texto -->
+        <div class="content-section">
+            <h2>Tradição, conhecimento e especialização</h2>
+            <p>A Matrix é uma empresa brasileira, que atua desde 1983 exclusivamente no desenvolvimento de softwares para o segmento da Medicina Diagnóstica.</p>
+            <p>Líder nacional em Automação Laboratorial, a Matrix foi pioneira no país na criação de sistemas para a gestão e automação de laboratórios clínicos. Atualmente, está presente em centenas de clientes que processam juntos milhões de exames mensalmente.</p>
+        </div>
+    </div>
+
+    <!-- Pop-up de vídeo -->
+    <div id="videoPopup" class="video-popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close-popup">&times;</span>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Seu navegador não suporta o vídeo.
+            </video>
+        </div>
+    </div>
+
+    <script src="sobre.js"></script>
+</body>
+</html>
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
