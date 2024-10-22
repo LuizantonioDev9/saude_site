@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2b1544;
+    margin-bottom: 20px;
+}
+
+.phone-icon {
+    font-size: 26px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.icon-item {
+    text-align: center;
+}
+
+.icon {
+    display: block;
+    font-size: 26px;
+    color: #2b1544;
+}
+
+.icon-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b1544;
+}
+
+.contact-form {
+    background: linear-gradient(90deg, rgba(174,148,228,1) 0%, rgba(185,153,210,1) 100%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7b5ea7;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #64448c;
+}
+
