@@ -1,0 +1,383 @@
+
+
+header {
+    width: 100%;
+    padding: 20px 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header.scrolling {
+    padding: 10px 2%;
+    background-color: #fff;
+}
+
+header.scrolling a {
+    color: black;
+    font-weight: 500;
+}
+
+header.scrolling .button-login-item {
+    color: white;
+}
+
+
+.logo_imagem {
+    width: 300px;
+    height: 80px;
+    margin-left: 40px;
+    margin-right: 100px;
+}
+
+.s-menu {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.s-menu ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+}
+
+/* posicionamento dos links ancoras */
+.s-menu__item {
+    margin-left: 2rem;
+}
+
+/* estilos dos links ancoras */
+.s-menu__item a{
+    font-weight: 400;
+    font-size: 20px;
+    transition: .4s;
+    color: white;
+}
+
+/* hover do links ancoras */
+.s-menu__item a:hover{
+    font-weight: 500;
+    font-size: 21px;
+    transition: .4s;
+}
+
+/* estilos do botão de login */
+.button-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50rem;
+    background-color: #250C80;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.button-login-item {
+    color: white;
+}
+
+/* estilos da foto de background */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image:linear-gradient(rgba(68, 68, 68, 0.5), rgba(87, 85, 85, 0.5)), url(/saude_site/assets/imagens/mulher\ da\ capa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+
+/* titulo estatico */
+.titulo-animado {
+    font-size: 70px;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+/* classe do titulo animado */
+.animated {
+    font-size: 70px;
+    font-weight: 500;
+    color: #250C80;
+}
+/* remover classe do texto animado */
+.animated-disable {
+    opacity:0;
+}
+
+/* posicionamento do texto e dos botões */
+main .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+    padding-top: 10rem;
+    margin-left: 40px;
+}
+
+/* botões de saiba mais e consulte valores */
+
+.button-item {
+    background-color: white;
+    height: 80px;
+    width: 200px;
+    margin: 0 10px 0 40px;
+    font-size: 18px;
+    border-radius: .2rem;
+    color: white;
+    background-color:#250C80 ;
+    cursor: pointer;
+}
+
+.button-item {
+    background-color: white;
+    height: 80px;
+    width: 200px;
+    margin: 0 10px 0 40px;
+    font-size: 18px;
+    border-radius: .2rem;
+    color: white;
+    background-color:#250C80 ;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.button-item:hover{
+    height: 90px;
+    width: 250px;
+    transition: .5s;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+
+.button-item-transparente {
+    background-color: white transparent;
+    height: 80px;
+    width: 200px;
+    margin: 0 10px 0 40px;
+    color: white;
+    border: 2px solid white;
+    border-radius: .2rem;
+    background: rgba(150,150,150,.50);
+    font-size: 18px;
+    cursor: pointer;
+    transition: .5s; 
+}
+
+.button-item-transparente:hover{
+    height: 90px;
+    width: 250px;
+    transition: .5s;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-title {
+    flex-wrap: wrap;
+    font-size: 48px;
+    font-weight: 500;
+    color: #250C80;
+    padding: 40px;
+}
+
+.main-image {
+    width: 1228px;
+    height: 400px;
+    margin: auto;
+}
+
+.main-subtitle {
+    font-size: 40px;
+    font-weight: 400;
+    padding: 40px;
+    color: #250C80;
+}
+
+.main-text {
+    flex-wrap: wrap;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.content-img {
+    margin-top: 40px;
+    width: 100%;
+    height: 800px;
+}
+
+.content {
+    display: none;
+}
+
+.content.show {
+    display: flex;
+}
+
+.tab-btn {
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-right: 50px;
+    /* border: 2px solid #250C80;
+    border-radius: 10px; */
+    border: none;
+    cursor: pointer;
+}
+
+.tab-btn:nth-child(1):hover{
+    border-bottom: 2px solid #250C80;
+    border-radius: 0%;
+    transition: 2ms ease-in-out;
+
+}
+
+.tab-btn:nth-child(2):hover{
+    border-bottom: 2px solid #250C80;
+    border-radius: 0%;
+    transition: 2ms ease-in-out;
+}
+
+.tab-btn:nth-child(3):hover{
+    border-bottom: 2px solid #250C80;
+    border-radius: 0%;
+    transition: 2ms ease-in-out;
+}
+
+.tab-btn:nth-child(4):hover{
+    border-bottom: 2px solid #250C80;
+    border-radius: 0%;
+    transition: 2ms ease-in-out;
+}
+
+.tab-btn:nth-child(5):hover{
+    border-bottom: 2px solid #250C80;
+    border-radius: 0%;
+    transition: 2ms ease-in-out;
+}
+
+.tab-btn:nth-child(6):hover{
+    border-bottom: 2px solid #250C80;
+    border-radius: 0%;
+    transition: 2ms ease-in-out;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+.roda-pe {
+    background-color: #250C80;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: flex-start;
+    padding-top: 40px;
+    color: white;
+}
+
+.contato {
+    margin-left: 400px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.titulo {
+    margin-bottom: 10px;
+}
+
+.numero {
+    font-weight: 600;
+}
+
+.politica {
+    font-weight: 600;
+    text-decoration: underline white;
+    text-decoration-thickness: .1rem;
+    margin-bottom: 30px;
+}
+
+.rede {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.rede h2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    margin-bottom: 5px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa-brands {
+    margin-right: 1rem;
+    color: white;
+}
+
+.button-footer-item {
+    border:3px solid white;
+    border-radius: 25px;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
