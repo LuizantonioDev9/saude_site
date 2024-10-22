@@ -1,0 +1,19 @@
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
+        }
+    })
+})
+
+const elementsX = document.querySelectorAll('.hiddenX')
+elementsX.forEach((element) => myObserver.observe(element))
+
+const elementsY = document.querySelectorAll('.hiddenY')
+elementsY.forEach((element) => myObserver.observe(element))
+
+const elementsYNeg = document.querySelectorAll('.hiddenYNeg')
+elementsYNeg.forEach((element) => myObserver.observe(element))
+
