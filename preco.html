@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Proposta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* azul claro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4682b4; /* azul mais escuro */
+        }
+
+        label {
+            font-size: 14px;
+            color: #333;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .checkbox-group {
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #4682b4; /* azul */
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #5b9bd5; /* azul mais claro */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Preços</h2>
+        <form>
+            <label for="quantidade">Quantidade de Computadores:</label>
+            <input type="text" id="quantidade" name="quantidade" placeholder="Digite aqui" required>
+
+            <label>Selecione o que deseja informatizar:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="laboratorio"> Laboratório</label>
+                <label><input type="checkbox" name="coletas"> Postos de coletas</label>
+                <label><input type="checkbox" name="equipamentos"> Equipamentos interfaceados</label>
+            </div>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone/Celular:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="+55" required>
+
+            <button type="submit">Receber Proposta</button>
+        </form>
+    </div>
+
+</body>
+</html>
