@@ -1,40 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>SSLAB - Software Laboratorial</title>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/inicio.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/hidden.css">
+
+    <link rel="shortcut icon" href="/saude_site/assets/saudesystems/saude_systems_1entrega23_32.png" type="image/x-icon">
+    
 </head>
 <body>
     <header class="header">
         <nav class="s-menu">
             <div class="container">
                 <a class="logo" href="#">
-                    <img class="logo_imagem" src="/saude_site/assets/saudesystems/saude_systems_1entrega.png" alt="">
+                    <img class="logo_imagem hiddenY" src="/saude_site/assets/saudesystems/saude_systems_1entrega.png" alt="">
                 </a>
                 <ul>
-                    <li class="s-menu__item">
-                        <a href="/">Inicio</a>
+                    <li class="s-menu__item hiddenYNeg">
+                        <a href="/saude_site/index.html">Inicio</a>
                     </li>
-                    <li class="s-menu__item">
-                        <a href="#">Sobre</a>
+                    <li class="s-menu__item hiddenYNeg">
+                        <a href="sobre.html">Sobre</a>
                     </li>
-                    <li class="s-menu__item">
-                        <a href="#">Módulos</a>
+                    <li class="s-menu__item hiddenYNeg">
+                        <a href="/saude_site/modulos.html">Módulos</a>
                     </li>
-                    <li class="s-menu__item">
+                    <li class="s-menu__item hiddenYNeg">
                         <a href="#">Preço</a>
                     </li>
-                    <li class="s-menu__item">
+                    <li class="s-menu__item hiddenYNeg">
                         <a href="#">Contato</a>
                     </li>
                 </ul>
-                <div class="button">
-                    <a href="#">Login</a>
+                <div class="button-login hiddenX">
+                    <a class="button-login-item" href="#">Login</a>
                 </div>
             </div>
         </nav>
     </header>
+
+
+    <main class="home">
+        <div class="container hiddenX">
+            <h2 class="titulo-animado">Todas as aplicações <br><span class="animated"></span></h2>
+            <div class="button hiddenYNeg">
+                <button class="button-item hiddenY" role="button">
+                    Saiba mais
+                </button>
+                <button class="button-item-transparente hiddenY"  role="button">
+                    Consulte Valores
+                </button>
+            </div>
+        </div>
+    </main>
+        <div class="main-content hiddenX">
+            <h2 class="main-title ">SSLAB, a gestão mais eficiente para o seu laboratório de <br>Análises Clínicas</h2>
+            <img class="main-image " src="/saude_site/assets/imagens/InicioImg1.png" alt="">
+            <h3 class="main-subtitle ">SSLAB - Software para Gestão de Laboratórios de Análises Clínicas</h3>
+            <p class="main-text ">O (LIS - Laboratory Information Management System) LABSYS WEB, é considerado o melhor software para gestão de laboratório de <br>
+                análises clínicas do Brasil. Excede as necessidades de um laboratório de Análises Clínicas, desde a coleta da amostra até o faturamento e 
+                gerenciamento de custos.</p>
+            <p class="main-text ">O (LIS - Laboratory Information Management System) LABSYS WEB, é considerado o melhor software para gestão de laboratório de <br>
+                análises clínicas do Brasil. Excede as necessidades de um laboratório de Análises Clínicas, desde a coleta da amostra até o faturamento e 
+                gerenciamento de custos.</p>
+            <p class="main-text ">O grande destaque o LABSYS WEB é a facilidade de uso, padronização dos fluxos do laboratório, qualidade na assistência aos clientes, atualizações e evoluções do sistema.</p>
+        </div>
+        <div id="container">
+            <div class="tab-buttons hiddenYNeg">
+                <button class="tab-btn" content-id="atend">
+                    <img class="icon avatar" src="/saude_site/assets/atend/atend_pentrega 1.png" alt="">
+                    <p>Saude Atend</p>
+                </button>
+                
+                <button class="tab-btn" content-id="cad">
+                    <img class="icon avatar" src="/saude_site/assets/cards/cad_pentrega 2.png" alt="">
+                    <p>Saude Cad</p>
+                </button>
+                
+                <button class="tab-btn" content-id="fatur">
+                    <img class="icon avatar" src="/saude_site/assets/cards/fatur_pentrega 1.png" alt="">
+                    <p>Saude Fatur</p>
+                </button>
+
+                <button class="tab-btn" content-id="finan">
+                    <img class="icon avatar" src="/saude_site/assets/cards/fatur.png" alt="">
+                    <p>Saude Finan</p>
+                </button>
+
+                <button class="tab-btn" content-id="interf">
+                    <img class="icon avatar" src="/saude_site/assets/cards/interf.png" alt="">
+                    <p>Saude Interf</p>
+                </button>
+
+                <button class="tab-btn" content-id="lab">
+                    <img class="icon avatar" src="/saude_site/assets/cards/lab_pentrega 1.png" alt="">
+                    <p>Saude Lab</p>
+                </button>
+            </div>
+
+            <div class="tab-contents logos hiddenX">
+                <div class="content show " id="atend">
+                    <img src="/saude_site/assets/mockups/atend1.png" class="content-img avatar" alt="">
+                </div>
+            
+                <div class="content " id="cad">
+                    <img src="/saude_site/assets/mockups/atend2.png" class="content-img avatar" alt="">
+                </div>
+
+                <div class="content " id="fatur">
+                    <img src="/saude_site/assets/mockups/fatur1.png" class="content-img avatar" alt="">
+                </div>
+
+                <div class="content " id="finan">
+                    <img src="/saude_site/assets/mockups/fatur2.png" class="content-img avatar" alt="">
+                </div>
+
+                <div class="content" id="interf">
+                    <img src="/saude_site/assets/mockups/interf1.png" class="content-img avatar" alt="">
+                </div>
+
+                <div class="content" id="lab">
+                    <img src="/saude_site/assets/mockups/lab1.png" class="content-img avatar" alt="">
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <div class="container hiddenX">
+            <div class="roda-pe">
+                <div class="contato hiddenY">
+                    <h3 class="titulo">Contato</h3>
+                    <p>Rua Fulano de tal, 9283</p>
+                    <p>Salvador / BA - CEP 232424-232</p>
+                    <p class="numero">(71) 99838-3923</p>
+                    <p class="politica">Politica de Privacidade</p>
+                    <div class="buttons-footer">
+                        <a class="button-footer-item" href="#">Suporte</a>
+                        <a class="button-footer-item" href="#">Contato</a>
+                    </div>
+                    <div class="copyright">
+                        <p><i class="fa-regular fa-copyright"></i> 2024 Criado por SaúdeSystems</p>
+                    </div>
+                    <div class="underline">
+                        <p> </p>
+                    </div>
+                </div>
+                <div class="rede hiddenY">
+                    <h2>Siga-nos</h2>
+                    <div class="redes-sociais hiddenYNeg">
+                        <a href="#"><i class="fa-brands fa-instagram fa-2x hiddenY"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in fa-2x hiddenY"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-2x hiddenY"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/menu.js"></script>
+    <script src="/js/type.js"></script>
+    <script src="/js/telas.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
