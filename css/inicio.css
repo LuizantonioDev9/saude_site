@@ -1,12 +1,11 @@
 
-
 header {
     width: 100%;
     padding: 20px 2%;
     position: fixed;
     top: 0;
     left: 0;
-    transition: 1s;
+    transition: .5s;
 }
 
 header .container {
@@ -34,8 +33,9 @@ header.scrolling .button-login-item {
 .logo_imagem {
     width: 300px;
     height: 80px;
-    margin-left: 40px;
-    margin-right: 100px;
+    margin: 0 auto;
+    /* margin-left: 40px;
+    margin-right: 100px; */
 }
 
 .s-menu {
@@ -76,7 +76,7 @@ header.scrolling .button-login-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 50rem;
+    margin: 0 auto;
     background-color: #250C80;
     width: 180px;
     height: 50px;
@@ -85,7 +85,6 @@ header.scrolling .button-login-item {
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    
 }
 
 .button-login-item {
@@ -110,8 +109,7 @@ header.scrolling .button-login-item {
 .titulo-animado {
     font-size: 70px;
     font-weight: 500;
-    margin-left: 40px;
-    margin-bottom: 100px;
+    margin: 0 auto;
     color: white;
 }
 
@@ -142,7 +140,7 @@ main .container {
     background-color: white;
     height: 80px;
     width: 200px;
-    margin: 0 10px 0 40px;
+    margin: 0 auto;
     font-size: 18px;
     border-radius: .2rem;
     color: white;
@@ -154,7 +152,7 @@ main .container {
     background-color: white;
     height: 80px;
     width: 200px;
-    margin: 0 10px 0 40px;
+    margin: 0 auto;
     font-size: 18px;
     border-radius: .2rem;
     color: white;
@@ -170,8 +168,6 @@ main .container {
     font-size: 22px;
     cursor: pointer;
 }
-
-
 
 .button-item-transparente {
     background-color: white transparent;
@@ -303,9 +299,6 @@ main .container {
     width: 60px;
     height: 60px;
 }
-
-
-
 
 .roda-pe {
     background-color: #250C80;
