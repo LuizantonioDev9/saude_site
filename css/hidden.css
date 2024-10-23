@@ -29,14 +29,36 @@
     display: flex;
 }
 
-.logos :nth-child(2) {
+
+.tab-btn:nth-child(2) {
     transition-delay: 400ms;
 }
-.logos :nth-child(3) {
-    transition-delay: 700ms;
+.tab-btn:nth-child(3) {
+    transition-delay: 800ms;
 }
-.logos :nth-child(4) {
-    transition-delay: 1000ms;
+
+.tab-btn:nth-child(4) {
+    transition-delay: 1400ms;
+}
+
+.tab-btn:nth-child(5) {
+    transition-delay: 1800ms;
+}
+
+.tab-btn:nth-child(6) {
+    transition-delay: 2000ms;
+}
+
+.cards-func :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.cards-func :nth-child(3) {
+    transition-delay: 800ms;
+}
+
+.cards-func :nth-child(4) {
+    transition-delay: 1200ms;
 }
 
 .avatar {
