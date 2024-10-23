@@ -5,7 +5,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    transition: .5s;
+    transition: 1s;
+    z-index: 1;
 }
 
 header .container {
