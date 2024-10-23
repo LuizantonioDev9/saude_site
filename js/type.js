@@ -15,3 +15,5 @@ window.addEventListener('scroll', () => {
     let animated = document.querySelector('.animated')
     animated.classList.toggle('animated-disable', window.scrollY > 220)
 })
+
+
