@@ -2,21 +2,21 @@
     opacity: 0;
     filter: blur(15px);
     transform: translateX(-100%);
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .hiddenY {
     opacity: 0;
     filter: blur(15px);
-    transform: translateY(-0%);
-    transition: all 2s;
+    transform: translateY(200%);
+    transition: all 1s;
 }
 
 .hiddenYNeg {
     opacity: 0;
     filter: blur(15px);
     transform: translateY(-200%);
-    transition: all 2s;
+    transition: all 1s;
 }
 .show {
     opacity: 1;
