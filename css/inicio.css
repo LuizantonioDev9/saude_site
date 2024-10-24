@@ -342,11 +342,13 @@ main .container {
     gap: 20px;
 }
 
+
 .cards-func {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
+
 
 
 .card-title {
@@ -372,6 +374,13 @@ main .container {
     border-radius: 10px;
 }
 
+.cards-item:hover {
+    width: 210px;
+    height: 210px;
+    transition: .1s ease-in-out;
+    box-shadow: 5px 15px #888888;
+}
+
 .card-icon {
     display: flex;
     align-items: center;
@@ -387,6 +396,8 @@ main .container {
 .fa-file-circle-plus,.fa-money-bill,.fa-shield-halved,.fa-network-wired {
     color: #250C80;
 }
+
+
 
 
 .roda-pe {
@@ -424,7 +435,7 @@ main .container {
     margin-bottom: 30px;
 }
 
-.rede {
+.redes-footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -432,7 +443,7 @@ main .container {
     
 }
 
-.rede h2{
+.redes-footer h2{
     display: flex;
     flex-direction: column;
     margin-left: 7px;
