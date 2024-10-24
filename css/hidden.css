@@ -61,6 +61,44 @@
     transition-delay: 1200ms;
 }
 
+.tab-btn:nth-child(1):hover{
+    border-bottom: 2px solid #250C80;
+    border-radius: 0%;
+    transition: 2ms ease-in-out;
+
+}
+
+.tab-btn:nth-child(2):hover{
+    border-bottom: 2px solid #250C80;
+    border-radius: 0%;
+    transition: 2ms ease-in-out;
+}
+
+.tab-btn:nth-child(3):hover{
+    border-bottom: 2px solid #250C80;
+    border-radius: 0%;
+    transition: 2ms ease-in-out;
+}
+
+.tab-btn:nth-child(4):hover{
+    border-bottom: 2px solid #250C80;
+    border-radius: 0%;
+    transition: 2ms ease-in-out;
+}
+
+.tab-btn:nth-child(5):hover{
+    border-bottom: 2px solid #250C80;
+    border-radius: 0%;
+    transition: 2ms ease-in-out;
+}
+
+.tab-btn:nth-child(6):hover{
+    border-bottom: 2px solid #250C80;
+    border-radius: 0%;
+    transition: 2ms ease-in-out;
+}
+
+
 .avatar {
     background-color: #fff;
     border-radius: 10px;
