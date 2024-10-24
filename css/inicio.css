@@ -84,7 +84,7 @@ header.scrolling .button-login-item {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 auto auto 600px;
     background-color: #250C80;
     width: 180px;
     height: 50px;
@@ -105,7 +105,7 @@ header.scrolling .button-login-item {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image:linear-gradient(rgba(68, 68, 68, 0.5), rgba(87, 85, 85, 0.5)), url(/saude_site/assets/imagens/mulher\ da\ capa.jpg);
+    background-image:linear-gradient(rgba(68, 68, 68, 0.5), rgba(87, 85, 85, 0.5)), url(/saude_site/assets/imagens/main-image-sslab-final.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -268,11 +268,63 @@ main .container {
     cursor: pointer;
 }
 
-.container3 {
-    background-color: #df8507;
+.banner {
+    /* background-image: linear-gradient(to right, rgb(37, 0, 171) , rgb(243, 243, 243)); */
+    content: "";
+    background-image: url(/saude_site/assets/imagens/chemist-2815640_1280\ 1.png);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height: 500px;
+    margin-bottom: 200px;
 }
+
+.title-banner {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 60px;
+    padding-top: 200px;
+    font-weight: 400;
+    color: white;
+}
+
+.text-banner {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.button-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.button-banner a {
+    text-align: center;
+    margin: auto;
+    background-color: #250C80;
+    text-decoration: none;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.button-banner a:hover {
+    background-color: #331c8a;
+    transition: .5s ease-in-out;
+    margin-top: 1px;
+}
+
 
 .icon {
     width: 60px;
