@@ -1,4 +1,5 @@
 
+/* header(navbar) */
 header {
     width: 100%;
     padding: 20px 2%;
@@ -30,7 +31,7 @@ header.scrolling .button-login-item {
     color: white;
 }
 
-.container2 {
+.container-func {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -199,6 +200,8 @@ main .container {
     cursor: pointer;
 }
 
+/* conteudo do main */
+
 .main-content {
     display: flex;
     flex-direction: column;
@@ -268,6 +271,8 @@ main .container {
     cursor: pointer;
 }
 
+/* banner com contato */
+
 .banner {
     /* background-image: linear-gradient(to right, rgb(37, 0, 171) , rgb(243, 243, 243)); */
     content: "";
@@ -331,7 +336,8 @@ main .container {
     height: 60px;
 }
 
-.container2 {
+/* cards funcionalidades */
+.container-func {
     padding: 50px;
 }
 
@@ -397,9 +403,10 @@ main .container {
     color: #250C80;
 }
 
+
+/* estilos dos cards redes sociais */
 .redes {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
     height: 65vh;
@@ -440,7 +447,7 @@ main .container {
 
 
 
-
+/* estilos do roda-pé */
 .roda-pe {
     background-color: #250C80;
     height: 40vh;
