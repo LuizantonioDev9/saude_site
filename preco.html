@@ -1,106 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Proposta</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff; /* azul claro */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .form-container {
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            max-width: 400px;
-            width: 100%;
-        }
-
-        h2 {
-            text-align: center;
-            color: #4682b4; /* azul mais escuro */
-        }
-
-        label {
-            font-size: 14px;
-            color: #333;
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        input[type="text"], input[type="email"], input[type="tel"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-
-        .checkbox-group {
-            margin-bottom: 20px;
-        }
-
-        .checkbox-group label {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        input[type="checkbox"] {
-            margin-right: 10px;
-        }
-
-        button {
-            width: 100%;
-            background-color: #4682b4; /* azul */
-            color: white;
-            border: none;
-            padding: 12px;
-            font-size: 16px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #5b9bd5; /* azul mais claro */
-        }
-    </style>
+    <title>Módulos</title>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/modulos.css">
+    <link rel="stylesheet" href="./css/preco.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="shortcut icon" href="/saude_site/assets/saudesystems/saude_systems_1entrega23_32.png" type="image/x-icon">
+    
 </head>
 <body>
-
+    <header class="header">
+        <nav class="s-menu">
+            <div class="container">
+                <a class="logo" href="#">
+                    <img class="logo_imagem" src="./assets/saudesystems/saude_systems_1entrega.png" alt="">
+                </a>
+                <ul>
+                    <li class="s-menu__item">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="s-menu__item">
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="s-menu__item">
+                        <a href="/saude_site/modulos.html">Módulos</a>
+                    </li>
+                    <li class="s-menu__item">
+                        <a href="#">Preço</a>
+                    </li>
+                    <li class="s-menu__item">
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+                <div class="button-login">
+                    <a class="button-login-item" href="#">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="form-container">
         <h2>Preços</h2>
-        <form>
-            <label for="quantidade">Quantidade de Computadores:</label>
-            <input type="text" id="quantidade" name="quantidade" placeholder="Digite aqui" required>
-
+        
+        <label for="computadores">Quantidade de computadores:</label>
+        <input type="text" id="computadores" placeholder="Digite aqui">
+        
+        <div class="checkbox-group">
             <label>Selecione o que deseja informatizar:</label>
-            <div class="checkbox-group">
-                <label><input type="checkbox" name="laboratorio"> Laboratório</label>
-                <label><input type="checkbox" name="coletas"> Postos de coletas</label>
-                <label><input type="checkbox" name="equipamentos"> Equipamentos interfaceados</label>
-            </div>
-
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="telefone">Telefone/Celular:</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="+55" required>
-
-            <button type="submit">Receber Proposta</button>
-        </form>
+            <input type="checkbox" id="laboratorio">
+            <label for="laboratorio">Laboratório</label><br>
+            <input type="checkbox" id="postos-coleta">
+            <label for="postos-coleta">Postos de coletas</label><br>
+            <input type="checkbox" id="equipamentos">
+            <label for="equipamentos">Equipamentos para Interface</label>
+        </div>
+        
+        <label for="nome">Nome*</label>
+        <input type="text" id="nome" required>
+        
+        <label for="email">Email*</label>
+        <input type="email" id="email" required>
+        
+        <label for="telefone">Telefone/Celular*</label>
+        <div class="phone-group">
+            <input type="tel" id="telefone" required>
+        </div>
+        
+        <button class="submit-btn">Receber Proposta</button>
     </div>
-
+    
+    <footer>
+        <div class="container">
+            <div class="roda-pe">
+                <div class="contato">
+                    <h3 class="titulo">Contato</h3>
+                    <p>Rua Fulano de tal, 9283</p>
+                    <p>Salvador / BA - CEP 232424-232</p>
+                    <p class="numero">(71) 99838-3923</p>
+                    <p class="politica">Politica de Privacidade</p>
+                    <div class="buttons-footer">
+                        <a class="button-footer-item" href="#">Suporte</a>
+                        <a class="button-footer-item" href="#">Contato</a>
+                    </div>
+                    <div class="copyright">
+                        <p><i class="fa-regular fa-copyright"></i> 2024 Criado por SaúdeSystems</p>
+                    </div>
+                    <div class="underline">
+                        <p> </p>
+                    </div>
+                </div>
+                <div class="rede">
+                    <h2>Siga-nos</h2>
+                    <div class="redes-sociais">
+                        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/type.js"></script>
 </body>
 </html>

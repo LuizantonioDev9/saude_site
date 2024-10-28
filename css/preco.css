@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    width: 820px;
+    background: linear-gradient(to bottom, #d2d0d6, #8e859e);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #3a215a;
+}
+
+.form-container label {
+    display: block;
+    font-size: 14px;
+    color: #3a215a;
+    text-align: left;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.checkbox-group {
+    text-align: left;
+    color: #3a215a;
+    font-size: 14px;
+    
+}
+
+.form-container input[type="checkbox"] {
+    margin-right: 2px;
+}
+
+.form-container .submit-btn {
+    background-color: #6c4b9e;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.form-container .submit-btn:hover {
+    background-color: #5a3d7d;
+}
+
+.form-container .phone-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.form-container .phone-group span {
+    background-color: #d3c5f7;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    color: #3a215a;
+    font-size: 14px;
+}
+
+.form-container .phone-group input[type="tel"] {
+    border-radius: 0 5px 5px 0;
+    width: 100%;
+    border-left: none;
+    padding: 8px;
+}

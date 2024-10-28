@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSLAB - Software Laboratorial</title>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/hidden.css">
+    <link rel="stylesheet" href="contato.css">
+
+    <link rel="shortcut icon" href="/saude_site/assets/saudesystems/saude_systems_1entrega23_32.png" type="image/x-icon">
+</head>
+<body>
+    <!-- header(navbar) -->
+    <header class="header">
+        <nav class="s-menu">
+            <div class="container hidden">
+                <a class="logo" href="#">
+                    <img class="logo_imagem" src="/saude_site/assets/saudesystems/saude_systems_1entrega.png" alt="">
+                </a>
+                <ul>
+                    <li class="s-menu__item">
+                        <a href="/saude_site/index.html">Inicio</a>
+                    </li>
+                    <li class="s-menu__item">
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="s-menu__item">
+                        <a href="/saude_site/modulos.html">Módulos</a>
+                    </li>
+                    <li class="s-menu__item">
+                        <a href="#">Preço</a>
+                    </li>
+                    <li class="s-menu__item">
+                        <a href="/contatos.html">Contato</a>
+                    </li>
+                </ul>
+                <div class="button-login">
+                    <a class="button-login-item" href="#">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- banner -->
+    <main class="home">
+        <div class="container">
+            <h2 class="titulo-animado hidden">Todas as aplicações <br><span class="animated"></span></h2>
+            <div class="button">
+                <a href="/saude_site/sobre.html">
+                    <button class="button-item hidden" role="button">
+                        Saiba mais
+                    </button>
+                </a>
+                <a href="/saude_site/preco.html">
+                    <button class="button-item-transparente hidden"  role="button">
+                        Consulte Valores
+                    </button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- conteudo principal -->
+        <section>
+            <div class="container">
+                <h1>Fale Conosco.<span class="phone-icon">📞</span></h1>
+                <div class="icons">
+                    <div class="icon-item">
+                        <span class="icon">📍</span>
+                        <span class="icon-text">SSLab</span>
+                    </div>
+                    <div class="icon-item">
+                        <span class="icon">✉️</span>
+                        <span class="icon-text">E-mail</span>
+                    </div>
+                    <div class="icon-item">
+                        <span class="icon">🛠️</span>
+                        <span class="icon-text">Suporte</span>
+                    </div>
+                </div>
+        
+                <form class="contact-form">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <input type="text" placeholder="Empresa">
+                    <textarea placeholder="Mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    
+    <!-- banner + contator -->
+    <section>
+        <div class="banner hidden">
+            <div>
+                <h2 class="title-banner hiddenY">Vamos Começar?</h2>
+                <p class="text-banner hidden">Entre em contato conosco hoje mesmo e descubra como a SaúdeLab pode ajudar no seu Laboratorio</p>
+                <div class="button-banner">
+                    <a class="hidden" href="/saude_site/contato.html">Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sessão de redes sociais -->
+    <section>
+        <div class="redes hidden">
+            <h2 class="title-redes">Fique por dentro das nossas redes sociais</h2>
+            <p class="text-redes">Siga nosso Instagram e fique atento às dicas</p>
+            <div class="cards-redes">
+                <a href="https://www.instagram.com/"><img class="cards-redes-item hiddenYNeg" src="/saude_site/assets/imagens/receptionists-5975962_640.jpg" alt=""></a>
+                <a href="https://www.instagram.com/"><img class="cards-redes-item hiddenYNeg" src="/saude_site/assets/imagens/computer-4795762_640.jpg" alt=""></a>
+                <a href="https://www.instagram.com/"><img class="cards-redes-item hiddenYNeg" src="/saude_site/assets/imagens/lab.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- roda-pé -->
+    <footer>
+        <div class="hidden">
+            <div class="roda-pe">
+                <div class="contato hidden">
+                    <h3 class="titulo">Contato</h3>
+                    <p>Rua Fulano de tal, 9283</p>
+                    <p>Salvador / BA - CEP 232424-232</p>
+                    <p class="numero">(71) 99838-3923</p>
+                    <p class="politica">Politica de Privacidade</p>
+                    <div class="buttons-footer">
+                        <a class="button-footer-item" href="#">Suporte</a>
+                        <a class="button-footer-item" href="#">Contato</a>
+                    </div>
+                    <div class="copyright">
+                        <p><i class="fa-regular fa-copyright"></i> 2024 Criado por SaúdeSystems</p>
+                    </div>
+                    <div class="underline">
+                        <p> </p>
+                    </div>
+                </div>
+                <div class="redes-footer  hidden">
+                    <h2>Siga-nos</h2>
+                    <div class="redes-sociais  hiddenY">
+                        <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="/saude_site/js/app.js"></script>
+<script src="/saude_site/js/menu.js"></script>
+<script src="/saude_site/js/type.js"></script>
+<script src="/saude_site/js/telas.js"></script>
+</html>
