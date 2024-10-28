@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/hidden.css">
     <link rel="shortcut icon" href="/saude_site/assets/saudesystems/saude_systems_1entrega23_32.png" type="image/x-icon">
     
 </head>
@@ -42,7 +43,7 @@
     </header>
     
     <main class="banner">
-        <div class="containers hidden">
+        <div class="containers">
             <h2 class="titulo-banner">Conheça o <span>SSLAB</span></h2>
             <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"><i class="fa-brands fa-youtube fa-8x"></i></a>
         </div>
@@ -50,45 +51,57 @@
 
     <section class="main-content">
         <div>
-            <h2 class="title">Conheça o <span class="negrito">SSLAB</span></h2>
+            <h2 class="title-main hidden">Conheça o <span class="negrito">SSLAB</span></h2>
         </div>
-        <div class="card-1">
-            <h2 class="title-item">Tradição, conhecimento e especialização</h2>
-            <div class="text">
+
+        <div class="container-text">
+            <h2 class="title hidden">Tradição, conhecimento e especialização</h2>
+            <div class="text hidden">
                 <p class="text-item">A Matrix é uma empresa brasileira, que atua desde 1983 exclusivamente no desenvolvimento de softwares para o segmento da Medicina Diagnóstica.</p>
                 <p class="text-item">Líder nacional em Automação Laboratorial, a Matrix foi pioneira no país na criação de sistemas para a gestão e automação de laboratórios clínicos. Atualmente, está presente em centenas de clientes que processam juntos milhões de exames mensalmente.</p>
             </div>
         </div>
-        <div>
-            <img src="/saude_site/assets/imagens/SobreImg1.png" alt="">
-            <div>
-                <h2>Tradição, conhecimento e especialização</h2>
-                <p>Toda a tecnologia e as soluções desenvolvidas representam a evolução da experiência e do aprimoramento contínuo, garantidos por uma equipe altamente qualificada. O êxito da Matrix é o resultado da contribuição de nossos clientes e dos esforços de uma equipe multidisciplinar, composta por profissionais das mais diversas áreas do conhecimento, incluindo engenheiros, analistas de sistemas, farmacêuticos, biomédicos, administradores e outros, que trabalham 365 dias por ano para garantir o sucesso do seu negócio. </p>
+
+        <div class="container-text">
+            <img class="img-item hidden" src="/saude_site/assets/imagens/SobreImg1.png" alt="">
+            <div class="text hidden">
+                <h2 class="title">Tradição,<br> conhecimento e <br>especialização</h2>
+                <p class="text-item">Toda a tecnologia e as soluções desenvolvidas representam a evolução da experiência e do aprimoramento contínuo, garantidos por uma equipe altamente qualificada. O êxito da Matrix é o resultado da contribuição de nossos clientes e dos esforços de uma equipe multidisciplinar, composta por profissionais das mais diversas áreas do conhecimento, incluindo engenheiros, analistas de sistemas, farmacêuticos, biomédicos, administradores e outros, que trabalham 365 dias por ano para garantir o sucesso do seu negócio. </p>
             </div>
         </div>
-        <div>
-            <h2>Missão</h2>
-            <p>Transformar organizações da saúde e melhorar as vidas das pessoas através de produtos e serviços de gestão de informações diagnósticas. </p>
+
+        <div class="container-text">
+            <h2 class="title hidden">Missão</h2>
+            <div class="text hidden">
+                <p class="text-item">Ser a mais desejada e bem-sucedida provedora de soluções de gestão de informações diagnósticas.</p>
+            </div>
         </div>
-        <div>
-            <h2>Visão</h2>
-            <p>Ser a mais desejada e bem-sucedida provedora de soluções de gestão de informações diagnósticas.</p>
+
+        <div class="container-text">
+            <h2 class="title hidden">Visão</h2>
+            <div class="text hidden">
+                <p class="text-item">Ser a mais desejada e bem-sucedida provedora de soluções de gestão de informações diagnósticas.</p>
+            </div>
         </div>
-        <div>
-            <img src="/saude_site/assets/imagens/SobreImg2.png" alt="">
-            <div>
-                <h2>Valores</h2>
-                <p>Paixão. Dar tudo de si.
-                    Integridade. Prática alinhada ao discurso.
-                    Competência. Capacidade e coragem para realizar.
-                    Pertencimento. Somos todos fundamentais.
-                    Propriedade. Saber fazer.
-                    Excelência. Sermos melhores a cada dia.
-                    Comprometimento. Honrar compromissos e superar expectativas.
-                    Olhar do cliente. Interesse genuíno pelas necessidades do cliente.</p>
+        
+
+        <div class="container-text">
+            <img class="img-item-2 hidden" src="/saude_site/assets/imagens/SobreImg2.png" alt="">
+            <div class="text hidden">
+                <h2 class="title-item">Valores</h2>
+                <p class="text-item">Paixão:Dar tudo de si.
+                    Integridade:Prática alinhada ao discurso.
+                    Competência:Capacidade e coragem para realizar.
+                    Pertencimento:Somos todos fundamentais.
+                    Propriedade:Saber fazer.
+                    Excelência:Sermos melhores a cada dia.
+                    Comprometimento:Honrar compromissos e superar expectativas.
+                    Olhar do cliente:Interesse genuíno pelas necessidades do cliente.
+                </p>
             </div>
         </div>
     </section>
+
     <footer>
         <div class="container">
             <div class="roda-pe">
@@ -120,6 +133,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/type.js"></script>
+    
 </body>
+<script src="js/type.js"></script>
+<script src="js/app.js"></script>
 </html>
