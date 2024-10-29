@@ -153,20 +153,14 @@ header .container {
     width: 600px;
 }
 
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-}
-
 
 .title-card {
-
+    font-size: 40px;
+    color: #250C80;
+    padding: 0 0 20px 0;
 }
 
-.text {
+.text-right {
     font-size: 20px;
     padding-left: 20rem;
 }
@@ -181,6 +175,7 @@ header .container {
 }
 
 .text-item {
+    font-size: 24px;
 }
 
 .embranco {
