@@ -11,35 +11,42 @@
     <link rel="shortcut icon" href="/saude_site/assets/saudesystems/saude_systems_1entrega23_32.png" type="image/x-icon">
     
 </head>
-<body>
-    <header class="header">
-        <nav class="s-menu">
-            <div class="container">
-                <a class="logo" href="#">
-                    <img class="logo_imagem" src="/saude_site/assets/saudesystems/saude_systems_1entrega.png" alt="">
-                </a>
-                <ul>
-                    <li class="s-menu__item">
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="modulos.html">Módulos</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="preco.html">Preço</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="contato.html">Contato</a>
-                    </li>
-                </ul>
-                <div class="button-login">
-                    <a class="button-login-item" href="#">Login</a>
-                </div>
+<body>    
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a class href="/saude_site/index.html"><img class="logo_imagem" src="/saude_site/assets/saudesystems/saude_systems_1entrega.png" alt=""></a>
             </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/modulos.html">Modulos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/preco.html">Preços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/contato.html">Contato</a></li>
+                </ul>
+
+            </div>
+            <div class="login-button">
+                <button><a href="#">Login</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+
         </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </div>
     </header>
     
     <main>
@@ -57,20 +64,20 @@
         <section class="containers">
             <div class="cards-v">
                 <div class="text-left">
-                    <h2  class="title-card">Tradição</h2>
-                    <p class="text-item">A SaudeSystems é uma empresa que traz soluções inovadoras para área da saúde</p>
-                    <p class="text-item">Localizada na cidade de Salvador, atendemos em toda região metropolitana e demais cidades do interior da Bahia com a elaboração de projetos e soluções de TI</p>
+                    <h2  class="title-card">Nossa Proposta</h2>
+                    <p class="text-item">Motivados por um mercado incipiente que não traz  nenhuma novidade na área de TI para laboratorios, sempre com as mesmas soluções e recursos que estão tendendo a obsolência, queremos criar ferramentas mais robustas que ofereçam confiabilidade e atendam não só as necessidades, mas projete o cliente à frente do seu tempo disponibilizando recursos dentro de sua realidade.</p>
                 </div>
-                <img class="card-img hidden" src="/saude_site/assets/imagens/SobreImg1.png" alt="">
+                <img class="card-img hidden" src="/saude_site/assets/imagens/undraw_Interview_re_e5jn.png" alt="">
             </div>
         </section>
         
         <section class="containers">
             <div class="cards-v">
-                <img class="card-img hidden" src="/saude_site/assets/imagens/SobreImg1.png" alt="">
+                <img class="card-img hidden" src="/saude_site/assets/imagens/undraw_online_connection_6778.png" alt="">
                 <div class="text-right hidden">
                     <h2 class="title-card">Confiabilidade das rotinas e nas informações integradas</h2>
-                    <p class="text-item">Toda a tecnologia e as soluções desenvolvidas representam a evolução da experiência e do aprimoramento contínuo, garantidos por uma equipe altamente qualificada. O êxito da Matrix é o resultado da contribuição de nossos clientes e dos esforços de uma equipe multidisciplinar, composta por profissionais das mais diversas áreas do conhecimento, incluindo engenheiros, analistas de sistemas, farmacêuticos, biomédicos, administradores e outros, que trabalham 365 dias por ano para garantir o sucesso do seu negócio. </p>
+                    <p class="text-item">As informações coletadas e geradas pelo sistema vem de várias fontes e sempre se mantem confiáveis, sem haver algum tipo de inconsistencias.
+                        Modularização sem perda de integração - O sistema é dividido em módulos que são distribuidos pelos setores do laboratório. Apesar de existir uma segmentação por setor estas informações não deixam de estar integradas. </p>
                 </div>
             </div>
         </section>
@@ -81,13 +88,13 @@
                     <h2 class="title-card">Segurança</h2>
                     <p class="text-item">A segurança é interpretado como restrição de acesso, só que é muito mais do que isso. Um sistema seguro deve dar garantias contra falhas e mal uso de suas funcionalidades.</p>
                 </div>
-                <img class="card-img  hiddenZ" src="/saude_site/assets/imagens/SobreImg2.png" alt="">
+                <img class="card-img  hiddenZ" src="/saude_site/assets/imagens/undraw_Security_re_a2rk.png" alt="">
             </div>
         </section>
         
         <section class="containers">
             <div class="cards-v">
-                <img class="card-img hidden" src="/saude_site/assets/imagens/SobreImg2.png" alt="">
+                <img class="card-img hidden" src="/saude_site/assets/imagens/undraw_Science_re_mnnr.png" alt="">
                 <div class="text-right hidden">
                     <h2 class="title-card">Rotinas focadas no negócio</h2>
                     <p class="text-item">Vários sistemas são um conjunto de funcionalidades que vão além da área de atuação a que se propõe, o nosso objetivo é o de se manter sempre fiel a esta área de atuação e especializar-se cada vez mais.</p>
@@ -102,13 +109,13 @@
                     <h2 class="title-card">Interface mais amigável e Simples</h2>
                     <p class="text-item">Em outros sistemas para fazer atividades simples o usuário as vezes tem que percorrer caminhos tortuosos, fechando e abrindo telas. Ou muitas vezes precisam quebrar a sua produtividades interagindo com o mouse. Parece simples mas essas facilidades de um sistema contribui muito para o aumento de produtividade do usuário de Sistemas de Informação, principalmente em um laboratório que precisa ter rapidez nos seus processos para atender as necessidades dos pacientes</p>
                 </div>
-                <img class="card-img hiddenZ" src="/saude_site/assets/imagens/SobreImg2.png" alt="">
+                <img class="card-img hiddenZ" src="/saude_site/assets/imagens/undraw_heatmap_uyye (1).png" alt="">
             </div>
         </section>
 
         <section class="containers">
             <div class="cards-v">
-                <img class="card-img hidden" src="/saude_site/assets/imagens/SobreImg2.png" alt="">
+                <img class="card-img hidden" src="/saude_site/assets/imagens/undraw_Engineering_team_a7n2.png" alt="">
                 <div class="text-right hidden">
                     <h2 class="title-card">Equipe</h2>
                     <p class="text-item">Nossa equipe é formada por profissionais na área de TI e Consultoria, comprometidos e preparados para atender continuamente a demanda de nossos clientes, estreitando ao máximo a relação Cliente/Fornecedor formando assim uma parceria onde possamos acrescentar com novas experiências acompanhando as tendências tecnológicas e do negócio.</p>
