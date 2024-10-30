@@ -512,6 +512,66 @@ main .container {
 }
 
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
+
+    .logo_imagem {
+        width: 150px;
+        height: 50px;
+    }
+
+    .titulo-animado {
+        font-size: 40px;
+    }
     
+    .animated {
+        font-size: 40px;
+        color: #250C80;
+    }
+
+    .home {
+        background-image:linear-gradient(rgba(68, 68, 68, 0.5), rgba(87, 85, 85, 0.5)), url(/saude_site/assets/imagens/mulher\ da\ capa.jpg);
+        height: 80vh;
+        width: 100vw;
+    }
+
+
+    .button-item {
+        height: 50px;
+        width: 160px;
+        font-size: 12px;
+    }
+    
+    
+    .button-item-transparente {
+        background-color: white transparent;
+        height: 50px;
+        width: 160px;
+        font-size: 12px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        width:100%;
+    }
+
+    .main-title {
+        font-size: 20px;
+        font-weight: 500;
+        color: #250C80;
+    }
+
+    .main-image {
+        width: 95%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .main-subtitle {
+        font-size: 20px;
+    }
+
+    .main-text {
+        font-size: 15px;
+        width: 90%;
+    }
   }
