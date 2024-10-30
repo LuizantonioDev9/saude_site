@@ -12,35 +12,43 @@
     <link rel="shortcut icon" href="/saude_site/assets/saudesystems/saude_systems_1entrega23_32.png" type="image/x-icon">
 </head>
 <body>
-    <!-- header(navbar) -->
     <header class="header">
-        <nav class="s-menu">
-            <div class="container hidden">
-                <a class="logo" href="#">
-                    <img class="logo_imagem" src="/saude_site/assets/saudesystems/saude_systems_1entrega.png" alt="">
-                </a>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a class href="/saude_site/index.html"><img class="logo_imagem" src="/saude_site/assets/saudesystems/saude_systems_1entrega.png" alt=""></a>
+            </div>
+
+            <div class="nav-list">
                 <ul>
-                    <li class="s-menu__item">
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="modulos.html">Módulos</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="preco.html">Preço</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="contato.html">Contato</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/modulos.html">Modulos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/preco.html">Preços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/contato.html">Contato</a></li>
                 </ul>
-                <div class="button-login">
-                    <a class="button-login-item" href="#">Login</a>
-                </div>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#">Login</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button class="btn" onclick="menuShow()"><i class="fa-solid fa-bars"></i></button>
             </div>
         </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/modulos.html">Modulos</a></li>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/preco.html">Preços</a></li>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/contato.html">Contato</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/saude_site/assets/menuResponsivo/menu_white_36dp.svg"></button>
+            </div>
+        </div>
     </header>
 
 
@@ -233,4 +241,5 @@
 <script src="/saude_site/js/menu.js"></script>
 <script src="/saude_site/js/type.js"></script>
 <script src="/saude_site/js/telas.js"></script>
+<script src="/saude_site/js/menuMobile.js"></script>
 </html>
