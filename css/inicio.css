@@ -27,24 +27,9 @@ header.scrolling a {
     font-weight: 500;
 }
 
+
 header.scrolling .button-login-item {
     color: white;
-}
-
-.container-func {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-.logo_imagem {
-    width: 300px;
-    height: 80px;
-    margin: 0 auto;
-    /* margin-left: 40px;
-    margin-right: 100px; */
 }
 
 .s-menu {
@@ -61,27 +46,27 @@ header.scrolling .button-login-item {
 }
 
 /* posicionamento dos links ancoras */
-.s-menu__item {
+/* .s-menu__item {
     margin-left: 2rem;
-}
+} */
 
 /* estilos dos links ancoras */
-.s-menu__item a{
+/* .s-menu__item a{
     font-weight: 400;
     font-size: 20px;
     transition: .4s;
     color: white;
-}
+} */
 
 /* hover do links ancoras */
-.s-menu__item a:hover{
+/* .s-menu__item a:hover{
     font-weight: 500;
     font-size: 21px;
     transition: .4s;
-}
+} */
 
 /* estilos do botão de login */
-.button-login {
+/* .button-login {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,7 +83,72 @@ header.scrolling .button-login-item {
 
 .button-login-item {
     color: white;
+} */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo_imagem {
+    width: 300px;
+    height: 80px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #250C80;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
 
 /* estilos da foto de background */
 .home {
@@ -511,8 +561,71 @@ main .container {
     margin-top: 30px;
 }
 
+.red {
+    background-color: black;
+}
+
+.redClose {
+    display: none;
+}
+
 
 @media screen and (max-width: 450px) {
+
+    header {
+        height: 50vh;
+    }
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+        
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    
+    .open {
+        display: block;
+        background-color: white;
+        transition: .0s ease;
+    }
 
     .logo_imagem {
         width: 150px;
