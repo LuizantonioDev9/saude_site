@@ -575,3 +575,63 @@ main .container {
         width: 90%;
     }
   }
+
+  @media screen and (max-width: 1366px) {
+    .button-login {
+        margin: 0 auto auto 250px;
+
+    }
+
+  }
+
+  @media screen and (max-width: 1024px) {
+    
+    
+    .logo_imagem {
+        width: 150px;
+        height: 50px;
+    }
+
+    
+    .s-menu {
+        padding: 1rem 0;
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+    
+    .s-menu ul {
+        margin-right: 10px;
+    }
+    
+    /* posicionamento dos links ancoras */
+    .s-menu__item {
+        margin-left: 1rem;
+    }
+    
+    /* estilos dos links ancoras */
+    .s-menu__item a{
+        font-weight: 400;
+        font-size: 20px;
+        transition: .4s;
+        color: white;
+    }
+    
+    /* hover do links ancoras */
+    .s-menu__item a:hover{
+        font-weight: 500;
+        font-size: 21px;
+        transition: .4s;
+    }
+    
+    /* estilos do botão de login */
+    .button-login {
+        margin: 0 auto auto 200px;
+
+    }
+    
+    .button-login-item {
+        color: white;
+    }
+
+  }
