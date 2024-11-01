@@ -5,6 +5,13 @@
     transition: all 1s;
 }
 
+.hiddenZ{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-90%);
+    transition: all 2s;
+}
+
 .hiddenY {
     opacity: 0;
     filter: blur(15px);
