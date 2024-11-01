@@ -329,10 +329,6 @@ main .container {
 }
 
 
-.icon {
-    width: 60px;
-    height: 60px;
-}
 
 /* cards funcionalidades */
 .container-func {
@@ -521,17 +517,17 @@ main .container {
     margin-top: 30px;
 }
 
-.red {
-    background-color: black;
-}
-
-.redClose {
-    display: none;
-}
 
 
 @media screen and (max-width: 450px) {
 
+    .icon {
+        width: 40px;
+        height: 40px;
+        transition: .1s ease-in-out;
+        
+    }
+    
 
     .nav-bar {
         padding: 1.5rem 4rem;
