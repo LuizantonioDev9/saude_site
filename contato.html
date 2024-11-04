@@ -3,49 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSLAB - Software Laboratorial</title>
+    <title>SSLAB - Software Laboratorial Teste</title>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/inicio.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/hidden.css">
-    <link rel="stylesheet" href="contato.css">
-
+    <link rel="stylesheet" href="css/hidden.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="./css/contato.css">
     <link rel="shortcut icon" href="/saude_site/assets/saudesystems/saude_systems_1entrega23_32.png" type="image/x-icon">
 </head>
 <body>
-    <!-- header(navbar) -->
     <header class="header">
-        <nav class="s-menu">
-            <div class="container hidden">
-                <a class="logo" href="#">
-                    <img class="logo_imagem" src="/saude_site/assets/saudesystems/saude_systems_1entrega.png" alt="">
-                </a>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a class href="/saude_site/index.html"><img class="logo_imagem" src="/saude_site/assets/saudesystems/saude_systems_1entrega.png" alt=""></a>
+            </div>
+
+            <div class="nav-list">
                 <ul>
-                    <li class="s-menu__item">
-                        <a href="/saude_site/index.html">Inicio</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="/saude_site/modulos.html">Módulos</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="#">Preço</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="/contatos.html">Contato</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/modulos.html">Modulos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/preco.html">Preços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/contato.html">Contato</a></li>
                 </ul>
-                <div class="button-login">
-                    <a class="button-login-item" href="#">Login</a>
-                </div>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#">Login</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button class="btn" onclick="menuShow()"><img class="icon" src="/saude_site/assets/menuResponsivo/barBlack.svg"></button>
             </div>
         </nav>
+
+        <!-- menu responsivo -->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/modulos.html">Modulos</a></li>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/preco.html">Preços</a></li>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/contato.html">Contato</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/saude_site/assets/menuResponsivo/barBlack.svg"></button>
+            </div>
+        </div>
     </header>
-
-
+    <!--Formulario de Contato -->
+    <section>
+        <div class="container">
+            <h1>Fale Conosco.<span class="phone-icon">📞</span></h1>
+            <div class="icons">
+                <div class="icon-item">
+                    <span class="icon">📍</span>
+                    <span class="icon-text">SSLab</span>
+                </div>
+                <div class="icon-item">
+                    <span class="icon">✉️</span>
+                    <span class="icon-text">E-mail</span>
+                </div>
+                <div class="icon-item">
+                    <span class="icon">🛠️</span>
+                    <span class="icon-text">Suporte</span>
+                </div>
+            </div>
+    
+            <form class="contact-form">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="text" placeholder="Empresa">
+                <textarea placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
     <!-- banner -->
     <main class="home">
         <div class="container">
@@ -65,48 +98,9 @@
         </div>
     </main>
 
-    <!-- conteudo principal -->
-        <section>
-            <div class="container">
-                <h1>Fale Conosco.<span class="phone-icon">📞</span></h1>
-                <div class="icons">
-                    <div class="icon-item">
-                        <span class="icon">📍</span>
-                        <span class="icon-text">SSLab</span>
-                    </div>
-                    <div class="icon-item">
-                        <span class="icon">✉️</span>
-                        <span class="icon-text">E-mail</span>
-                    </div>
-                    <div class="icon-item">
-                        <span class="icon">🛠️</span>
-                        <span class="icon-text">Suporte</span>
-                    </div>
-                </div>
-        
-                <form class="contact-form">
-                    <input type="text" placeholder="Nome" required>
-                    <input type="email" placeholder="E-mail" required>
-                    <input type="text" placeholder="Empresa">
-                    <textarea placeholder="Mensagem" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
     
-    <!-- banner + contator -->
-    <section>
-        <div class="banner hidden">
-            <div>
-                <h2 class="title-banner hiddenY">Vamos Começar?</h2>
-                <p class="text-banner hidden">Entre em contato conosco hoje mesmo e descubra como a SaúdeLab pode ajudar no seu Laboratorio</p>
-                <div class="button-banner">
-                    <a class="hidden" href="/saude_site/contato.html">Contato</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
+    
     <!-- sessão de redes sociais -->
     <section>
         <div class="redes hidden">
@@ -120,7 +114,7 @@
         </div>
     </section>
 
-    <!-- roda-pé -->
+    <!-- rodapé -->
     <footer>
         <div class="hidden">
             <div class="roda-pe">
@@ -158,4 +152,5 @@
 <script src="/saude_site/js/menu.js"></script>
 <script src="/saude_site/js/type.js"></script>
 <script src="/saude_site/js/telas.js"></script>
+<script src="/saude_site/js/menuMobile.js"></script>
 </html>
