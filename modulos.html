@@ -1,175 +1,143 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulos cscs</title>
+    <title>Módulos</title>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/modulos.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="shortcut icon" href="/saude_site/assets/saudesystems/saude_systems_1entrega23_32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/hidden.css">
+    
+    <link rel="shortcut icon" href="./assets/saudesystems/saude_systems_1entrega23_32.png" type="image/x-icon">
     
 </head>
-<body>
-    <header class="header">
-        <nav class="s-menu">
-            <div class="container">
-                <a class="logo" href="#">
-                    <img class="logo_imagem" src="./assets/saudesystems/saude_systems_1entrega.png" alt="">
-                </a>
+<body>    
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a class href="/saude_site/index.html"><img class="logo_imagem" src="/saude_site/assets/saudesystems/saude_systems_1entrega.png" alt=""></a>
+            </div>
+            <div class="nav-list">
                 <ul>
-                    <li class="s-menu__item">
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="modulos.html">Módulos</a>
-                    </li>
-                    <li class="s-menu__item">
-<<<<<<< HEAD
-                        <a href="./preco.html">Preço</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="./contatos.html">Contato</a>
-=======
-                        <a href="preco.html">Preço</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="contato.html">Contato</a>
->>>>>>> 3a386cbc85693d06f6c5f2b221f502e5474b4455
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/modulos.html">Modulos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/preco.html">Preços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/contato.html">Contato</a></li>
                 </ul>
-                <div class="button-login">
-                    <a class="button-login-item" href="#">Login</a>
+
+            </div>
+            <div class="login-button">
+                <button><a href="#">Login</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="banner">
+            <div class="containers">
+                <h2 class="titulo-banner">Conheça o <span>SSLAB</span></h2>
+                <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"><i class="fa-brands fa-youtube fa-8x"></i></a>
+            </div>
+        </section>
+        
+        <div class="t-main">
+            <h2 class="main-title">Conheça o <span class="negrito">SSLAB</span></h2>
+        </div>
+
+        
+        <section class="containers">
+            <div class="cards-v">
+                <img class="card-img hidden" src="./assets/mockups/atend1.png" alt="">
+                <div class="text-right hidden">
+                    <h2 class="title-card">Gerenciamento de Pacientes e Requisições</h2>
+                    <p class="text-item">Módulo utilizado na recepção do laboratório, responsável por garantir a boa recepção do paciente. Ele permite que mais de um médico e mais de um convênio estejam na mesma requisição.</p>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main class="home">
-        <div class="containers hidden">
-            <h2 class="titulo-sobre">Conheça o <span>SSLAB</span></h2>
-            <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"><i class="fa-brands fa-youtube fa-8x"></i></a>
-        </div>
-    </main>
-    <section>
-      <h2>Conheça nossos modulos</h2>
-  <div class="container">
-    <!-- Primeiro bloco: imagem à esquerda, texto à direita -->
-    <div class="block">
-      <div class="image-container">
-        <p><img src="./assets/mockups/cad1.png" width="450" height="250" alt=""></p>
-      </div>
-      <div class="text-container">
-        <h1>Gerenciamento de Pacientes e Requisições <span><img src="./assets/logos/atend_pentrega 1.png"  height="32px" alt=""></span></h1>
-        <br>
-        <p>Para garantir eficiência e organização no fluxo de atendimento, o sistema oferece controle abrangente para gestão de exames, desde a restrição de convênios específicos até a inclusão e exclusão de exames, filtragem de informações para relatórios gerenciais e emissão de etiquetas agrupadas.</p>
-        <br>
-        <p>Além disso, o sistema assegura o controle de amostras repetidas, sem duplicação de dados, e permite a rastreabilidade na entrega de laudos, eliminando o uso de cadernos físicos e promovendo uma gestão segura e transparente.</p>
-      </div>
-    </div>
+        </section>
 
-    <div class="block">
-      <div class="image-container">
-        <p><img src="./assets/mockups/atend2.png" width="450" height="250" alt=""></p>
-      </div>
-      <div class="text-container">
-        <h1>Cadastro de Parâmetros Administrativos <span><img src="./assets/logos/cad_pentrega.png"  height="32px" alt=""></span></h1>
-        <br>
-        <p>O sistema deve possibilitar a inserção de dados específicos da empresa, permitindo o cadastro de Unidades de Atendimento com filtros por unidade</p>
-        <br>
-        <p>Além disso, é possível padronizar convênios e configurar uma tabela de procedimentos, oferecendo flexibilidade e controle sobre os dados essenciais.</p>
-      </div>
-  </div>
-  </div>
-    
-    <div class="container">
-      <!-- Primeiro bloco: imagem à esquerda, texto à direita -->
-      <div class="block">
-        <div class="image-container">
-          <p><img src="./assets/mockups/fatur1.png" width="450" height="250" alt=""></p>
-        </div>
-        <div class="text-container">
-          <h1>Faturamento de Convênios <span><img src="./assets/logos/fatur_pentrega.png"  height="32px" alt=""></span></h1>
-          <br>
-          <p>Rotinas bem elaboradas direcionadas às regras de cada convênio.</p>
-          <br>
-          <p>Possui Pré-faturamento, conferência de guias, e geração de lotes para faturamento eletrônico.</p>
-          <br>
-          <p>Efetuar faturamento de exames individualizados com dados solicitados pelo SUS</p>
-        </div>
-      </div>
-
-      <div class="block">
-        <div class="image-container">
-          <p><img src="./assets/mockups/interf1.png" width="450" height="250" alt=""></p>
-        </div>
-        <div class="text-container">
-          <h1>ATENDIMENTO AO PACIENTE <span><img src="./assets/logos/financ_pentrega.png"  height="32px" alt=""></span></h1>
-          <br>
-          <p>O SSWEB possui funções que facilitam e agilizam o processo de coleta das amostras. Esses processos fazem com que seu atendimento seja rápido, evitando filas e organizando amostras de maneira fácil para serem analisadas.</p>
-          <br>
-          <p>É possível fazer coletas no local, organizando as amostras para emissão dos resultados.</p>
-          <br>
-          <p>Todas as amostras podem ser identificadas através de códigos de barras, organizadas por setores de resultados, além da possibilidade de impressão da ficha de bancada.</p>
-        </div>
-    </div>
-    </div>
-      
-      <div class="container">
-        <!-- Primeiro bloco: imagem à esquerda, texto à direita -->
-        <div class="block">
-          <div class="image-container">
-            <p><img src="./assets/mockups/lab1.png" width="450" height="250" alt=""></p>
-          </div>
-          <div class="text-container">
-            <h1>Comunicação com Equipamentos de Automação Laboratorial <span><img src="./assets/logos/interf_pentrega.png"  height="32px" alt=""></span></h1>
-            <br>
-            <p>Reduz a incidência de erros na digitação.</p>
-            <br>
-            <p>Envio do resultado direto para o sistema armazenando informações de usuário, data e hora da execução. </p>
-            <br>
-            <p>Permitir o envio de amostras e exames para o aparelho sendo uma comunicação Bi-direcional ou Uni-direcional conforme necessidades do aparelho.</p>
-          </div>
-        </div>
-
-        <div class="block">
-          <div class="image-container">
-            <p><img src="./assets/mockups/transf1.png" width="450" height="250" alt=""></p>
-          </div>
-          <div class="text-container">
-            <h1>ATENDIMENTO AO PACIENTE <span><img src="./assets/logos/segur_p2entrega.png"  height="32px" alt=""></span></h1>
-            <br>
-            <p>O SSWEB possui funções que facilitam e agilizam o processo de coleta das amostras. Esses processos fazem com que seu atendimento seja rápido, evitando filas e organizando amostras de maneira fácil para serem analisadas.</p>
-            <br>
-            <p>É possível fazer coletas no local, organizando as amostras para emissão dos resultados.</p>
-            <br>
-            <p>Todas as amostras podem ser identificadas através de códigos de barras, organizadas por setores de resultados, além da possibilidade de impressão da ficha de bancada.</p>
-          </div>
-      </div>
-      </div>
+        <section class="containers">
+            <div class="cards-v">
+                <div class="text-left hiddenZ">
+                    <h2 class="title-card">Cadastro de Parâmetros Administrativos</h2>
+                    <p class="text-item">Permitir o cadastro de Unidades de Atendimento possibilitando o filtro das informações por unidade</p>
+                </div>
+                <img class="card-img  hiddenZ" src="./assets/mockups/cad1.png" alt="">
+            </div>
+        </section>
         
-        <div class="container">
-          <!-- Primeiro bloco: imagem à esquerda, texto à direita -->
-          <div class="block">
-            <div class="image-container">
-              <p><img src="./assets/mockups/segur1.png" width="450" height="250" alt=""></p>
+        <section class="containers">
+            <div class="cards-v">
+                <img class="card-img hidden" src="./assets/mockups/fatur1.png" alt="">
+                <div class="text-right hidden">
+                    <h2 class="title-card">Gerenciamento de Faturamento de Convênios</h2>
+                    <p class="text-item">Módulo utilizado no faturamento de guias de convênios. Rotinas bem elaboradas direcionadas às regras de cada convênio. Possui Pré-faturamento, conferência de guias, e geração de lotes para faturamento eletrônico.</p>
+                </div>
             </div>
-            <div class="text-container">
-              <h1>Transferência de Dados via B2B <span><img src="./assets/logos/trasnf_pentrega.png"  height="32px" alt=""></span></h1>
-              <br>
-              <p>O sistema deverá permitir a comunicação com outros sistemas para envio e recebimento de resultados</p>
-              <br>
-              <p>Rastreamento de amostras e resultados recebidos ou enviados através de sistemas </p>
-              <br>
-              <p>Gerenciar o faturamento dos exames recebidos por outro sistema</p>
-            </div>
-          </div>
-    </section>
-    
+        </section>
 
+        
+        <section class="containers">
+            <div class="cards-v">
+                <div class="text-left hiddenZ">
+                    <h2 class="title-card">Comunicação com Equipamentos de Automação Laboratorial</h2>
+                    <p class="text-item">Módulo de comunicação com os aparelhos de automação laboratorial, possibilita através de protocolos a comunicação com equipamentos de laboratório. Esse módulo trabalha em conjunto com o módulo Saúde Lab. Reduz a incidência de erros na digitação.</p>
+                </div>
+                <img class="card-img hiddenZ" src="./assets/mockups/interf1.png" alt="">
+            </div>
+        </section>
+
+        <section class="containers">
+            <div class="cards-v">
+                <img class="card-img hidden" src="./assets/mockups/transf1.png" alt="">
+                <div class="text-right hidden">
+                    <h2 class="title-card">Transferência de Dados via arquivos para outros sistemas (B2B)</h2>
+                    <p class="text-item">Módulo de comunicação com outros sistemas laboratoriais, principalmente de laboratórios de apoio. Esse módulo trabalha em conjunto com o módulo Saude Lab.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="containers">
+            <div class="cards-v">
+                <div class="text-left hiddenZ">
+                    <h2 class="title-card">Cadastro de Parâmetros de Segurança</h2>
+                    <p class="text-item">Módulo de segurança que gerencia os acessos ao sistema, dividindo os grupos em perfis de acessos.</p>
+                </div>
+                <img class="card-img hiddenZ" src="./assets/mockups/segur2.png" alt="">
+            </div>
+        </section>
+
+        <section class="containers">
+            <div class="cards-v">
+                <img class="card-img hidden" src="./assets/mockups/lab3.png" alt="">
+                <div class="text-right hidden">
+                    <h2 class="title-card">Gerenciamento e Controle das Amostras</h2>
+                    <p class="text-item">Módulo utilizado na área técnica do laboratório, controla a distribuição das amostras auxiliando na execução, liberação e  emissão dos resultados. Permite um melhor rastreamento do material coletado do paciente. Controla a repetição de exames com o mesmo material ou com uma nova coleta.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+
+        
     <footer>
         <div class="container">
             <div class="roda-pe">
@@ -201,6 +169,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/type.js"></script>
+    
 </body>
+<script src="js/type.js"></script>
+<script src="js/app.js"></script>
 </html>
