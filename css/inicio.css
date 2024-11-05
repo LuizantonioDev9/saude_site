@@ -72,13 +72,15 @@ header.scrolling .button-login-item {
 /* Lista de navegação */
 .nav-list {
     display: flex; /* Exibe os itens em linha */
-    align-items: center; /* Centraliza os itens verticalmente */
+    align-items: center;
+    margin-right: 5rem; /* Centraliza os itens verticalmente */
 }
 
 /* Lista dentro da navegação */
 .nav-list ul {
     display: flex; /* Exibe itens em linha */
-    justify-content: center; /* Centraliza os itens */
+    justify-content: center;
+    align-items: center; /* Centraliza os itens */
     list-style: none; /* Remove os marcadores de lista */
 }
 
@@ -98,7 +100,8 @@ header.scrolling .button-login-item {
 /* Botão de login */
 .login-button {
     display: flex; /* Usa flexbox para centralizar o botão */
-    align-items: center; /* Centraliza o botão verticalmente */
+    align-items: center;
+    width: 150px; /* Centraliza o botão verticalmente */
 }
 
 /* Estilo do botão de login */
@@ -106,7 +109,8 @@ header.scrolling .button-login-item {
     border: none; /* Remove a borda */
     background-color: #250C80; /* Cor de fundo azul escuro */
     padding: 15px 25px; /* Espaçamento interno no botão */
-    border-radius: 5px; /* Bordas arredondadas */
+    border-radius: 5px;
+    width: 150px; /* Bordas arredondadas */
 }
 
 /* Link dentro do botão de login */
@@ -137,13 +141,13 @@ header.scrolling .button-login-item {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
 }
 
 /* titulo estatico */
 .titulo-animado {
-    font-size: 70px;
+    font-size: 4rem;
     font-weight: 500;
     margin: 0 auto;
     color: white;
@@ -151,7 +155,7 @@ header.scrolling .button-login-item {
 
 /* classe do titulo animado */
 .animated {
-    font-size: 70px;
+    font-size: 4rem;
     font-weight: 500;
     color: #250C80;
 }
@@ -181,7 +185,7 @@ main .container {
     height: 80px;
     width: 200px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 1rem;
     border-radius: .2rem;
     color: white;
     background-color:#250C80 ;
@@ -293,7 +297,7 @@ main .container {
 /* banner com contato */
 .banner {
     content: "";
-    background-image: url(/saude_site/assets/imagens/chemist-2815640_1280\ 1.png);
+    background-image: url(/assets/imagens/chemist-2815640_1280\ 1.png);
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
