@@ -127,14 +127,13 @@ header.scrolling .button-login-item {
     display: none; /* Esconde o ícone do menu móvel */
 }
 
-
 /* estilos da foto de background */
 .home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image:linear-gradient(rgba(68, 68, 68, 0.5), rgba(87, 85, 85, 0.5)), url(/saude_site/assets/imagens/main-image-sslab-final.jpg);
+    background-image:linear-gradient(rgba(68, 68, 68, 0.5), rgba(87, 85, 85, 0.5)), url(/assets/imagens/main-image-sslab-final.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,6 +172,8 @@ main .container {
 /*ATE AQUI FOI ADICIONADO NO header.css*/
 
 
+
+/* MAIN BANNER */
 /* botões de saiba mais e consulte valores */
 
 .button-item {
@@ -218,8 +219,9 @@ main .container {
     cursor: pointer;
 }
 
-/* conteudo do main */
 
+
+/* CONTEUDO DO MAIN */
 .main-content {
     display: flex;
     flex-direction: column;
@@ -287,8 +289,8 @@ main .container {
     cursor: pointer;
 }
 
-/* banner com contato */
 
+/* banner com contato */
 .banner {
     content: "";
     background-image: url(/saude_site/assets/imagens/chemist-2815640_1280\ 1.png);
@@ -535,7 +537,7 @@ main .container {
 }
 
 
-/* Design do site em diferentes tamanhos de tela*/
+/* Design responsivo*/
 @media screen and (max-width: 450px) {
 
     .tab-buttons {
