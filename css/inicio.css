@@ -237,7 +237,7 @@ main .container {
 
 .main-title {
     flex-wrap: wrap;
-    font-size: 48px;
+    font-size: 2.5rem;
     font-weight: 500;
     color: #250C80;
     padding: 40px;
