@@ -1,25 +1,11 @@
-
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-}
-
 h1 {
     font-size: 32px;
     font-weight: bold;
     color: #2b1544;
     margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+
 }
 
 .phone-icon {
