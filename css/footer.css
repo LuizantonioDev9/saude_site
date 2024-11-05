@@ -1,0 +1,76 @@
+/* estilos do roda-pé */
+.roda-pe {
+    background-color: #250C80;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: flex-start;
+    padding-top: 40px;
+    color: white;
+}
+
+.contato {
+    margin-left: 400px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.titulo {
+    margin-bottom: 10px;
+}
+
+.numero {
+    font-weight: 600;
+}
+
+.politica {
+    font-weight: 600;
+    text-decoration: underline white;
+    text-decoration-thickness: .1rem;
+    margin-bottom: 30px;
+}
+
+.redes-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.redes-footer h2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+    margin-bottom: 5px;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa-brands {
+    margin-right: 1rem;
+    color: white;
+}
+
+.button-footer-item {
+    border:3px solid white;
+    border-radius: 25px;
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+

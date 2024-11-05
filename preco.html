@@ -3,79 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulos</title>
+    <title>SSLAB - Software Laboratorial Teste</title>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/preco.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="shortcut icon" href="/saude_site/assets/saudesystems/saude_systems_1entrega23_32.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="css/hidden.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="/saude_site/assets/saudesystems/saude_systems_1entrega23_32.png" type="image/x-icon">
 </head>
 <body>
     <header class="header">
-        <nav class="s-menu">
-            <div class="container">
-                <a class="logo" href="#">
-                    <img class="logo_imagem" src="./assets/saudesystems/saude_systems_1entrega.png" alt="">
-                </a>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a class href="/saude_site/index.html"><img class="logo_imagem" src="/saude_site/assets/saudesystems/saude_systems_1entrega.png" alt=""></a>
+            </div>
+
+            <div class="nav-list">
                 <ul>
-                    <li class="s-menu__item">
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="/saude_site/modulos.html">Módulos</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="./preco.html">Preço</a>
-                    </li>
-                    <li class="s-menu__item">
-                        <a href="./contatos.html">Contato</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/modulos.html">Modulos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/preco.html">Preços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/saude_site/contato.html">Contato</a></li>
                 </ul>
-                <div class="button-login">
-                    <a class="button-login-item" href="#">Login</a>
-                </div>
+            </div>
+
+            <div class="login-button">
+                <button><a href="#">Login</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button class="btn" onclick="menuShow()"><img class="icon" src="/saude_site/assets/menuResponsivo/barBlack.svg"></button>
             </div>
         </nav>
+
+        <!-- menu responsivo -->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/modulos.html">Modulos</a></li>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/preco.html">Preços</a></li>
+                <li class="nav-item"><a class="nav-link" href="/saude_site/contato.html">Contato</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="/saude_site/assets/menuResponsivo/barBlack.svg"></button>
+            </div>
+        </div>
     </header>
-    
-    <div class="form-container">
-       
-        <h2>Preços</h2>
-        
-        <label for="computadores">Quantidade de computadores:</label>
-        <input type="text" id="computadores" placeholder="Digite aqui">
-        
-        <div class="checkbox-group">
-            <label>Selecione o que deseja informatizar:</label>
-            <input type="checkbox" id="laboratorio">
-            <label for="laboratorio">Laboratório</label><br>
-            <input type="checkbox" id="postos-coleta">
-            <label for="postos-coleta">Postos de coletas</label><br>
-            <input type="checkbox" id="equipamentos">
-            <label for="equipamentos">Equipamentos para Interface</label>
-        </div>
-        
-        <label for="nome">Nome*</label>
-        <input type="text" id="nome" required>
-        
-        <label for="email">Email*</label>
-        <input type="email" id="email" required>
-        
-        <label for="telefone">Telefone/Celular*</label>
-        <div class="phone-group">
-            <input type="tel" id="telefone" required>
-        </div>
-        
-        <button class="submit-btn">Receber Proposta</button>
-    </div>
-    
-    <footer>
+
+
+    <!-- banner -->
+    <main class="home">
         <div class="container">
+            <h2 class="titulo-animado hidden">Todas as aplicações <br><span class="animated"></span></h2>
+            <div class="button">
+                <a href="/saude_site/sobre.html">
+                    <button class="button-item hidden" role="button">
+                        Saiba mais
+                    </button>
+                </a>
+                <a href="/saude_site/preco.html">
+                    <button class="button-item-transparente hidden"  role="button">
+                        Consulte Valores
+                    </button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="form-container">
+       
+            <h2>Preços</h2>
+            
+            <label for="computadores">Quantidade de computadores:</label>
+            <input type="text" id="computadores" placeholder="Digite aqui">
+            
+            <div class="checkbox-group">
+                <label>Selecione o que deseja informatizar:</label>
+                <input type="checkbox" id="laboratorio">
+                <label for="laboratorio">Laboratório</label><br>
+                <input type="checkbox" id="postos-coleta">
+                <label for="postos-coleta">Postos de coletas</label><br>
+                <input type="checkbox" id="equipamentos">
+                <label for="equipamentos">Equipamentos para Interface</label>
+            </div>
+            
+            <label for="nome">Nome*</label>
+            <input type="text" id="nome" required>
+            
+            <label for="email">Email*</label>
+            <input type="email" id="email" required>
+            
+            <label for="telefone">Telefone/Celular*</label>
+            <div class="phone-group">
+                <input type="tel" id="telefone" required>
+            </div>
+            
+            <button class="submit-btn">Receber Proposta</button>
+        </div>
+    </section>
+   
+
+    <!-- rodapé -->
+    <footer>
+        <div class="hidden">
             <div class="roda-pe">
-                <div class="contato">
+                <div class="contato hidden">
                     <h3 class="titulo">Contato</h3>
                     <p>Rua Fulano de tal, 9283</p>
                     <p>Salvador / BA - CEP 232424-232</p>
@@ -92,17 +129,22 @@
                         <p> </p>
                     </div>
                 </div>
-                <div class="rede">
+                <div class="redes-footer  hidden">
                     <h2>Siga-nos</h2>
-                    <div class="redes-sociais">
+                    <div class="redes-sociais  hiddenY">
                         <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
                         <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="js/type.js"></script>
+
 </body>
+<script src="/saude_site/js/app.js"></script>
+<script src="/saude_site/js/menu.js"></script>
+<script src="/saude_site/js/type.js"></script>
+<script src="/saude_site/js/telas.js"></script>
+<script src="/saude_site/js/menuMobile.js"></script>
 </html>
