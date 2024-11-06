@@ -155,19 +155,19 @@ header.scrolling a {
     display: none;
 }
 
-
 .banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(/assets/imagens/chemist-2815640_1280\ 1.png);
+    background-image:linear-gradient(rgba(68, 68, 68, 0.5), rgba(87, 85, 85, 0.5)), url(/assets/imagens/chemist-2815640_1280\ 1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 70vh;
     width: 100%;
 }
+
 
 .containers {
     display: flex;
@@ -195,14 +195,18 @@ header.scrolling a {
 
 /* titulo principal */
 .t-main {
-    padding: 80px;
-    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
 }
 
 .main-title {
     text-align: center;
     font-size: 48px;
-    color: #250C80;
+    color: white;
     font-weight: 400;
 }
 
@@ -379,6 +383,12 @@ dialog {
         
     }
 
+    header.scrolling {
+        padding: 10px 2%;
+        background-color: #fff;
+    }
+    
+
     .icon {
         width: 40px;
         height: 40px;
@@ -398,7 +408,8 @@ dialog {
     }
 
     .nav-link {
-        color: red;
+        color: black;
+        font-weight: 500;
         
     }
 
@@ -451,6 +462,7 @@ dialog {
         display: block;
         background-color: white;
         transition: .0s ease;
+        
     }
 
     .logo_imagem {
@@ -460,26 +472,15 @@ dialog {
 
     /* main */
 
-    .banner {
-        background-image: url(/assets/imagens/chemist-2815640_1280\ 1.png);
-        height: 80vh;
-        width: 100vw;
-    }
-    
-    .titulo-banner {
-        font-size: 1rem;
-        color: white;
-        font-weight: 400;
+    .t-main {
         display: flex;
-        text-align: center;
-        align-items: center;
+        flex-direction: column;
     }
-
 
     .main-title {
         text-align: center;
         font-size: 1.5rem;
-        color: #250C80;
+        color: white;
         font-weight: 400;
         flex-wrap: nowrap;
     }
@@ -510,6 +511,9 @@ dialog {
     .cards {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        padding: 20px;
     }
     
     
