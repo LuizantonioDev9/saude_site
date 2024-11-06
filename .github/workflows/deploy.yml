@@ -5,7 +5,7 @@ on:
             -master
 jobs:
   deploy:
-    name: Deploy
+    name: Deploy teste
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -16,4 +16,4 @@ jobs:
         host: ${{ secrets.HOST }} 
         user: ${{ secrets.USER }}
         password: ${{ secrets.PASS }}
-        localDir: /public_html
+        localDir: public_html/
