@@ -544,8 +544,6 @@ main .container {
 /* Design responsivo*/
 @media screen and (max-width: 600px) {
 
-
-
     .content-img {
         margin-top: 40px;
         width: 100%;
@@ -650,7 +648,7 @@ main .container {
 
     .button-item {
         height: 50px;
-        width: 120px;
+        width: 90px;
         font-size: 12px;
     }
     
@@ -660,6 +658,7 @@ main .container {
         height: 50px;
         width: 160px;
         font-size: 12px;
+        margin-left: 5px;
     }
 
     .main-content {
@@ -672,6 +671,11 @@ main .container {
         width: 100%;
         display: flex;
         flex-direction: column;
+    }
+
+    .img_teste{
+        width: 50px;
+        height: 10px;
     }
 
     .main-title {
