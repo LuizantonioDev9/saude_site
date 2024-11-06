@@ -542,13 +542,8 @@ main .container {
 
 
 /* Design responsivo*/
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 600px) {
 
-    .tab-buttons {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
 
 
     .content-img {
@@ -575,7 +570,6 @@ main .container {
         width: 40px;
         height: 40px;
         transition: .1s ease-in-out;
-        
     }
     
     .nav-bar {
@@ -648,7 +642,7 @@ main .container {
     }
 
     .home {
-        background-image:linear-gradient(rgba(68, 68, 68, 0.5), rgba(87, 85, 85, 0.5)), url(/saude_site/assets/imagens/mulher\ da\ capa.jpg);
+        background-image:linear-gradient(rgba(68, 68, 68, 0.5), rgba(87, 85, 85, 0.5)), url(/assets/imagens/mulher\ da\ capa.jpg);
         height: 80vh;
         width: 100vw;
     }
@@ -656,7 +650,7 @@ main .container {
 
     .button-item {
         height: 50px;
-        width: 160px;
+        width: 120px;
         font-size: 12px;
     }
     
@@ -673,10 +667,21 @@ main .container {
         width:100%;
     }
 
+    
+    .tab-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     .main-title {
         font-size: 20px;
         font-weight: 500;
         color: #250C80;
+    }
+
+    .tab-btn {
+        margin-right: 0;
     }
 
     .main-image {
@@ -769,10 +774,18 @@ main .container {
         margin: 0;
         align-items: center;
     }
-    
 
+    .redes-footer h2 {
+        margin-top: 20px;
+    }
 
-    
+    .redes-sociais {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 15px;
+    }
+
   }
 
   @media screen and (max-width: 1366px) {

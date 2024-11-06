@@ -94,7 +94,6 @@ header.scrolling a {
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 6rem;
 }
 
 .logo {
@@ -157,8 +156,6 @@ header.scrolling a {
 }
 
 
-
-
 .banner {
     display: flex;
     flex-direction: column;
@@ -168,7 +165,7 @@ header.scrolling a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
 }
 
@@ -178,12 +175,11 @@ header.scrolling a {
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-bottom: 200px;
     gap: 20px;
 }
 
 .titulo-banner {
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
     font-weight: 400;
     display: flex;
@@ -219,6 +215,11 @@ header.scrolling a {
     height: 400px;
 }
 
+
+.mobile-card {
+    display: none;
+}
+
 .cards {
     display: flex;
     flex-direction: row;
@@ -228,11 +229,12 @@ header.scrolling a {
 .cards-v {
     display: flex;
     align-items: center;
+    width: 90%;
 }
 
 .card-img {
-    height: 450px;
-    width: 500px;
+    height: 350px;
+    width: 350px;
 }
 
 
@@ -257,7 +259,7 @@ header.scrolling a {
 }
 
 .text-item {
-    font-size: 24px;
+    font-size: 1.3rem;
 }
 
 .embranco {
@@ -359,8 +361,7 @@ dialog {
 }
 
 /* Design do site em diferentes tamanhos de tela*/
-@media screen and (max-width: 450px) {
-
+@media screen and (max-width: 600px) {
 
     .content {
         display: none;
@@ -369,11 +370,13 @@ dialog {
     .content.show {
         display: flex;
     }
+    
     #container {
         display: flex;
         flex-direction:column;
         align-items:normal;
         padding: 20px;
+        
     }
 
     .icon {
@@ -385,14 +388,18 @@ dialog {
     
     .nav-bar {
         padding: 1.5rem 4rem;
+        width: 400px;
+        
     }
 
     .nav-item {
         display: none;
+        
     }
 
     .nav-link {
-        color: #000;
+        color: red;
+        
     }
 
     .login-button {
@@ -423,6 +430,14 @@ dialog {
         
     }
 
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+        
+    }
+
+
+
     .mobile-menu .login-button {
         display: block;
         padding: 1rem 2rem;
@@ -441,6 +456,83 @@ dialog {
     .logo_imagem {
         width: 150px;
         height: 50px;
+    }
+
+    /* main */
+
+    .banner {
+        background-image: url(/assets/imagens/chemist-2815640_1280\ 1.png);
+        height: 80vh;
+        width: 100vw;
+    }
+    
+    .titulo-banner {
+        font-size: 1rem;
+        color: white;
+        font-weight: 400;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    .main-title {
+        text-align: center;
+        font-size: 1.5rem;
+        color: #250C80;
+        font-weight: 400;
+        flex-wrap: nowrap;
+    }
+
+    .cards-v {
+        display: none;
+    }
+
+    h2.title-card {
+        font-size: 20px;
+        color: #250C80;
+    }
+
+    .text-item {
+        font-size: 1rem;
+    }
+
+    .mobile-card {
+        display: block;
+        width: 100%;
+    }
+
+    .containers {
+        height: 0;
+    }
+    
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .card-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    
+    .title-card {
+        font-size: 40px;
+        color: #250C80;
+    }
+
+
+    .text-left {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .text-center {
+        text-align: center;
+        font-size: 1rem;
     }
 
     .roda-pe {
@@ -462,8 +554,5 @@ dialog {
         margin: 0;
         align-items: center;
     }
-    
 
-
-    
   }
