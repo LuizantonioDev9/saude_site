@@ -312,7 +312,7 @@ header.scrolling a {
     margin-bottom: 30px;
 }
 
-.rede {
+.redes-footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -320,7 +320,7 @@ header.scrolling a {
     
 }
 
-.rede h2{
+.redes-footer h2{
     display: flex;
     flex-direction: column;
     margin-left: 7px;
@@ -541,7 +541,7 @@ dialog {
 
     .roda-pe {
         width: 100%;
-        height: 50vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
     }
@@ -554,9 +554,31 @@ dialog {
     }
 
     .redes-footer {
-        width: 100%;
-        margin: 0;
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    
+    .redes-footer h2{
+        display: flex;
+        flex-direction: column;
+        margin-left: 7px;
+        margin-bottom: 5px;
+        color: white;
+    }
+    
+    .redes-sociais {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .fa-brands {
+        margin-right: 1rem;
+        color: white;
     }
 
   }
