@@ -5,7 +5,6 @@
     <title>Preços</title>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="./css/preco.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/hidden.css">
@@ -16,15 +15,15 @@
     <header>
         <nav class="nav-bar">
             <div class="logo">
-                <a class href="/index.html"><img class="logo_imagem" src="/saude_site/assets/saudesystems/saude_systems_1entrega.png" alt=""></a>
+                <a class href="/index.html"><img class="logo_imagem" src="./assets/saudesystems/saude_systems_1entrega.png" alt=""></a>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/sobre.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/modulos.html">Modulos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/preco.html">Preços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./modulos.html">Modulos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./preco.html">Preços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
                 </ul>
 
             </div>
@@ -53,22 +52,27 @@
     <main>
         
         <section class="containers">
+            <div><h2>Preços</h2></div>
             <div class="form-container">
-       
-                <h2>Preços</h2>
-                
                 <label for="computadores">Quantidade de computadores:</label>
                 <input type="text" id="computadores" placeholder="Digite aqui">
                 
                 <div class="checkbox-group">
-                    <label>Selecione o que deseja informatizar:</label>
-                    <input type="checkbox" id="laboratorio">
-                    <label for="laboratorio">Laboratório</label><br>
-                    <input type="checkbox" id="postos-coleta">
-                    <label for="postos-coleta">Postos de coletas</label><br>
-                    <input type="checkbox" id="equipamentos">
-                    <label for="equipamentos">Equipamentos para Interface</label>
+                    <label>Selecione o que deseja informatizar:</label><br>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="laboratorio">
+                        <label for="laboratorio">Laboratório</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="postos-coleta">
+                        <label for="postos-coleta">Postos de Coletas</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="equipamentos">
+                        <label for="equipamentos">Equipamentos para Interface</label>
+                    </div>
                 </div>
+                
                 
                 <label for="nome">Nome*</label>
                 <input type="text" id="nome" required>
