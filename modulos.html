@@ -13,7 +13,7 @@
     
 </head>
 <body>    
-    <header>
+    <header class="header">
         <nav class="nav-bar">
             <div class="logo">
                 <a class href="index.html"><img class="logo_imagem" src="/assets/saudesystems/saude_systems_1entrega.png" alt=""></a>
@@ -25,9 +25,8 @@
                     <li class="nav-item"><a class="nav-link" href="modulos.html">Modulos</a></li>
                     <li class="nav-item"><a class="nav-link" href="preco.html">Preços</a></li>
                     <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-                </ul>
-
             </div>
+        
             <div class="login-button">
                 <button><a href="#">Login</a></button>
             </div>
@@ -35,33 +34,80 @@
             <div class="mobile-menu-icon">
                 <button class="btn" onclick="menuShow()"><img class="icon" src="/assets/menuResponsivo/barBlack.svg"></button>
             </div>
-
         </nav>
 
+        <!-- menu responsivo -->
         <div class="mobile-menu">
             <ul>
-                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="modulos.html">Modulos</a></li>
+                <li class="nav-item"><a class="nav-link" href="preco.html">Preços</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
             </ul>
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="/assets/img/menu_white_36dp.svg" alt=""></button>
-            </div>
         </div>
     </header>
     
     <main>
-        <section class="banner">
-            <div class="containers">
-                <h2 class="titulo-banner">Conheça o <span>SSLAB</span></h2>
-                <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY&ab_channel=A2ZHighlights"><i class="fa-brands fa-youtube fa-8x"></i></a>
+        <div class="banner">
+            <div class="t-main">
+                <h2 class="main-title">Conheça o <span class="negrito">SSLAB</span></h2>
+                <a href="https://www.youtube.com/"><i class="youtube fa-brands fa-youtube fa-5x"></i></a>
             </div>
-        </section>
-        
-        <div class="t-main">
-            <h2 class="main-title">Conheça o <span class="negrito">SSLAB</span></h2>
         </div>
 
+        
+                <!-- mobile cards section -->
+                <section class="mobile-card">
+                    <div class="cards">
+                        <div class="text-center">
+                             <img class="card-img  hiddenZ" src="./assets/mockups/cad1.png" alt="">
+                            <h2 class="title-card">Cadastro de Parâmetros Administrativos</h2>
+                            <p class="text-item">Permitir o cadastro de Unidades de Atendimento possibilitando o filtro das informações por unidade</p>
+                        </div>
+                        
+                    </div>
+        
+                    <div class="cards">
+                        <div class="text-center hidden">
+                            <img class="card-img hidden" src="./assets/mockups/fatur1.png" alt="">
+                            <h2 class="title-card">Gerenciamento de Faturamento de Convênios</h2>
+                            <p class="text-item">Módulo utilizado no faturamento de guias de convênios. Rotinas bem elaboradas direcionadas às regras de cada convênio. Possui Pré-faturamento, conferência de guias, e geração de lotes para faturamento eletrônico.</p>
+                        </div>
+                    </div>
+        
+                    <div class="cards">
+                        <div class="text-center hiddenZ">
+                            <img class="card-img hiddenZ" src="./assets/mockups/interf1.png" alt="">
+                            <h2 class="title-card">Comunicação com Equipamentos de Automação Laboratorial</h2>
+                            <p class="text-item">Módulo de comunicação com os aparelhos de automação laboratorial, possibilita através de protocolos a comunicação com equipamentos de laboratório. Esse módulo trabalha em conjunto com o módulo Saúde Lab. Reduz a incidência de erros na digitação.</p>
+                        </div>
+                    </div>
+        
+                    <div class="cards">
+                        <div class="text-center hidden">
+                            <img class="card-img hiddenZ" src="./assets/mockups/interf1.png" alt="">
+                            <h2 class="title-card">Transferência de Dados via arquivos para outros sistemas (B2B)</h2>
+                            <p class="text-item">Módulo de comunicação com outros sistemas laboratoriais, principalmente de laboratórios de apoio. Esse módulo trabalha em conjunto com o módulo Saude Lab.</p>
+                        </div>
+                    </div>
+        
+                    <div class="cards">
+                        <div class="text-center hiddenZ">
+                            <img class="card-img hiddenZ" src="./assets/mockups/segur2.png" alt="">
+                            <h2 class="title-card">Cadastro de Parâmetros de Segurança</h2>
+                            <p class="text-item">Módulo de segurança que gerencia os acessos ao sistema, dividindo os grupos em perfis de acessos.</p>
+                        </div>
+                    </div>
+        
+                    <div class="cards">
+                        <div class="text-center hidden">
+                            <img class="card-img hidden" src="./assets/mockups/lab3.png" alt="">
+                            <h2 class="title-card">Gerenciamento e Controle das Amostras</h2>
+                            <p class="text-item">Módulo utilizado na área técnica do laboratório, controla a distribuição das amostras auxiliando na execução, liberação e  emissão dos resultados. Permite um melhor rastreamento do material coletado do paciente. Controla a repetição de exames com o mesmo material ou com uma nova coleta.</p>
+                        </div>
+                    </div>
+                </section>
         
         <section class="containers">
             <div class="cards-v">
@@ -158,11 +204,11 @@
                         <p> </p>
                     </div>
                 </div>
-                <div class="rede">
+                <div class="redes-footer">
                     <h2>Siga-nos</h2>
-                    <div class="redes-sociais">
+                    <div class="redes-sociais  hiddenY">
                         <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
                         <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
                     </div>
                 </div>
@@ -171,6 +217,9 @@
     </footer>
     
 </body>
-<script src="js/type.js"></script>
-<script src="js/app.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/menu.js"></script>
+<script src="/js/type.js"></script>
+<script src="/js/telas.js"></script>
+<script src="/js/menuMobile.js"></script>
 </html>
