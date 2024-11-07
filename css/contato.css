@@ -1,6 +1,6 @@
 h1 {
     font-size: 32px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     color: #250C80;
     margin-bottom: 20px;
@@ -37,12 +37,14 @@ h1 {
     color: #2b1544;
 }
 
+/* Formulário de Contato */
 .contact-form {
     background: linear-gradient(180deg, rgba(174,148,228,1) 0%, rgb(230, 226, 233) 100%);
     padding: 50px;
     border-radius: 20px;
-    justify-content: baseline;
     display: block;
+    position: relative; /* Garante que o formulário respeite o fluxo da página */
+    z-index: 1;
 }
 
 .contact-form input, .contact-form textarea {
@@ -74,16 +76,26 @@ h1 {
 }
 
 
+/* Header */
 header {
     width: 100%;
     padding: 10px 2%;
-    position: fixed;
+    position: fixed; /* Garante que o header fica fixo no topo */
     top: 0;
     left: 0;
-    transition: 1s;
     background-color: white;
-    z-index: 1;
+    z-index: 1; /* Define a prioridade de camada para que ele fique sobre outros elementos */
 }
+
+/* Main */
+main {
+    margin-top: 80px; /* Ajuste este valor para a altura do seu header */
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 header .container {
     display: flex;
@@ -101,17 +113,7 @@ header.scrolling a {
     color: black;
     font-weight: 500;
 }
-s-menu {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 6rem;
-}
 
-.s-menu ul {
-    display: flex;
-    flex-direction: row;
-    margin-right: 100px;
-}
 
 .nav-bar {
     display: flex;
@@ -131,6 +133,7 @@ s-menu {
 .nav-list {
     display: flex;
     align-items: center;
+    position: static;
 }
 
 .nav-list ul {
@@ -177,28 +180,22 @@ s-menu {
     display: none;
 }
 
-.banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-image:linear-gradient(rgba(68, 68, 68, 0.5), rgba(87, 85, 85, 0.5)), url(/assets/imagens/chemist-2815640_1280\ 1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-    width: 100%;
-}
-
 
 .containers {
+   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 250px;
     gap: 20px;
+    width: 1500px;
+    height: 400px;
+    position: relative;
+    padding-bottom: 250px;
+
 }
+
 
 .titulo-banner {
     font-size: 4rem;
@@ -236,10 +233,7 @@ s-menu {
     font-weight: 600;
 }
 
-.containers {
-    width: 1500px;
-    height: 400px;
-}
+
 
 
 .mobile-card {
@@ -301,9 +295,11 @@ s-menu {
     height: 40vh;
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: flex-start;
-    padding-top: 40px;
+    padding-top: 10px;
+    position: relative; /* Define position como relative */
+    z-index: 1; /* Z-index menor que o header, para garantir que ele fique por baixo */
 }
 
 .contato {
@@ -311,9 +307,10 @@ s-menu {
     margin-right: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     color: white;
+    position: relative;
 }
 
 .titulo {
