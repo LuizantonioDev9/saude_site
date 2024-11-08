@@ -11,33 +11,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>    
-    <header>
+    <header class="header">
         <nav class="nav-bar">
             <div class="logo">
-                <a class href="./index.html"><img class="logo_imagem" src="./assets/saudesystems/saude_systems_1entrega.png" alt=""></a>
+                <a class href="index.html"><img class="logo_imagem" src="/assets/saudesystems/saude_systems_1entrega.png" alt=""></a>
             </div>
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./sobre.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./modulos.html">Modulos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./preco.html">Preços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contato.html">Contato</a></li>
-                </ul>
-
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="modulos.html">Modulos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="preco.html">Preços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
             </div>
+        
             <div class="login-button">
                 <button><a href="#">Login</a></button>
             </div>
 
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="/assets/img/menu_white_36dp.svg" alt=""></button>
+                <button class="btn" onclick="menuShow()"><img class="icon" src="/assets/menuResponsivo/barBlack.svg"></button>
             </div>
         </nav>
+
+        <!-- menu responsivo -->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="modulos.html">Modulos</a></li>
+                <li class="nav-item"><a class="nav-link" href="preco.html">Preços</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+        </div>
     </header>
+
     <main>
         <section class="containers">
-            <div>
+            <div class="contact-text">
                 <h1>Fale Conosco.<span class="phone-icon"><img width="52" height="52" src="https://img.icons8.com/color/48/ringer-volume.png" alt="ringer-volume"/></span></h1>
                 <div class="icons">
                     <div class="icon-item">
@@ -89,11 +100,11 @@
                         <p> </p>
                     </div>
                 </div>
-                <div class="rede">
+                <div class="redes-footer">
                     <h2>Siga-nos</h2>
-                    <div class="redes-sociais">
+                    <div class="redes-sociais  hiddenY">
                         <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
                         <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
                     </div>
                 </div>
@@ -104,4 +115,5 @@
 </body>
 <script src="js/type.js"></script>
 <script src="js/app.js"></script>
+<script src="js/menuMobile.js"></script>
 </html>
