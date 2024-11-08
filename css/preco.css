@@ -1,4 +1,124 @@
 
+/* Header */
+
+header {
+    width: 100%;
+    padding: 10px 2%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    background-color: white;
+    z-index: 1;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header.scrolling {
+    padding: 10px 2%;
+    background-color: #fff;
+}
+
+header.scrolling a {
+    color: black;
+    font-weight: 500;
+}
+
+
+.s-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.s-menu ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo_imagem {
+    width: 300px;
+    height: 80px;
+}
+
+.nav-list {
+    display: flex; /* Exibe os itens em linha */
+    align-items: center;
+    margin-right: 5rem; /* Centraliza os itens verticalmente */
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #000;
+    font-weight: 400;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+
+.login-button button {
+    border: none;
+    background-color: #250C80;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+
+
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 150px;
+    gap: 20px;
+}
+
 /* Preco */
 .form-container {
     width: 820px;
@@ -99,149 +219,6 @@ h2 {
     width: 100%;
     border-left: none;
     padding: 8px;
-}
-/* Header */
-
-header {
-    width: 100%;
-    padding: 10px 2%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 1s;
-    background-color: white;
-    z-index: 1;
-}
-
-header .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-header.scrolling {
-    padding: 10px 2%;
-    background-color: #fff;
-}
-
-header.scrolling a {
-    color: black;
-    font-weight: 500;
-}
-
-
-.s-menu {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 6rem;
-}
-
-.s-menu ul {
-    display: flex;
-    flex-direction: row;
-    margin-right: 100px;
-}
-
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo_imagem {
-    width: 300px;
-    height: 80px;
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-}
-
-.nav-list ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-item {
-    margin: 0 15px;
-}
-
-.nav-link {
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: #000;
-    font-weight: 400;
-}
-
-.login-button {
-    display: flex;
-    align-items: center;
-}
-
-.login-button button {
-    border: none;
-    background-color: #250C80;
-    padding: 15px 25px;
-    border-radius: 5px;
-}
-
-.login-button button a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-
-.mobile-menu {
-    display: none;
-}
-
-.mobile-menu-icon {
-    display: none;
-}
-
-
-
-
-.containers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 150px;
-    gap: 20px;
-}
-
-.titulo-banner {
-    font-size: 4rem;
-    color: white;
-    font-weight: 400;
-    display: flex;
-}
-
-.titulo-sobre span {
-    font-weight: bold;
-}
-
-.titulo-sobre {
-    text-align: center;
-}
-
-/* titulo principal */
-.t-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: auto;
 }
 
 /* FOOTER */
@@ -443,36 +420,13 @@ dialog {
     }
   
     /* main */
-  
-    .t-main {
-        display: flex;
-        flex-direction: column;
+    .price-title {
+        margin-top: 10rem;
     }
-  
-    .main-title {
-        text-align: center;
-        font-size: 1.5rem;
-        color: white;
-        font-weight: 400;
-        flex-wrap: nowrap;
-    }
-  
-    .cards-v {
-        display: none;
-    }
-  
-    h2.title-card {
-        font-size: 20px;
-        color: #250C80;
-    }
-  
-    .text-item {
-        font-size: 1rem;
-    }
-  
-    .mobile-card {
-        display: block;
-        width: 100%;
+
+    main {
+        margin-bottom: 10rem;
+        padding-bottom: 0px;
     }
   
     .containers {
