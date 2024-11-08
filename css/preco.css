@@ -335,3 +335,233 @@ dialog {
     box-shadow: 0 0 1em rgb(0 0 0 / .3);
     width: 80%;
 }
+
+/* Design do site em diferentes tamanhos de tela*/
+@media screen and (max-width: 600px) {
+
+    .content {
+        display: none;
+    }
+  
+    .content.show {
+        display: flex;
+    }
+    
+    #container {
+        display: flex;
+        flex-direction:column;
+        align-items:normal;
+        padding: 20px;
+        
+    }
+  
+    header.scrolling {
+        padding: 10px 2%;
+        background-color: #fff;
+    }
+    
+  
+    .icon {
+        width: 40px;
+        height: 40px;
+        transition: .1s ease-in-out;
+        
+    }
+    
+    .nav-bar {
+        padding: 1.5rem 4rem;
+        width: 400px;
+        
+    }
+  
+    .nav-item {
+        display: none;
+        
+    }
+  
+    .nav-link {
+        color: black;
+        font-weight: 500;
+        
+    }
+  
+    .login-button {
+        display: none;
+    }
+  
+    .mobile-menu-icon {
+        display: block;
+    }
+  
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+  
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        
+    }
+  
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+        
+    }
+  
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+        
+    }
+  
+  
+  
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+  
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    
+    .open {
+        display: block;
+        background-color: white;
+        transition: .0s ease;
+        
+    }
+  
+    .logo_imagem {
+        width: 150px;
+        height: 50px;
+    }
+  
+    /* main */
+  
+    .t-main {
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .main-title {
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        font-weight: 400;
+        flex-wrap: nowrap;
+    }
+  
+    .cards-v {
+        display: none;
+    }
+  
+    h2.title-card {
+        font-size: 20px;
+        color: #250C80;
+    }
+  
+    .text-item {
+        font-size: 1rem;
+    }
+  
+    .mobile-card {
+        display: block;
+        width: 100%;
+    }
+  
+    .containers {
+        height: 0;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .form-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+  
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        padding: 20px;
+    }
+    
+    
+    .card-img {
+        height: 200px;
+        width: 200px;
+    }
+  
+    
+    .title-card {
+        font-size: 40px;
+        color: #250C80;
+    }
+  
+  
+    .text-left {
+        text-align: center;
+        font-size: 10px;
+    }
+  
+    .text-center {
+        text-align: center;
+        font-size: 1rem;
+    }
+  
+    .roda-pe {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    .contato {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        height: 50%;
+    }
+  
+    .redes-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    
+    .redes-footer h2{
+        display: flex;
+        flex-direction: column;
+        margin-right: 1.50rem;
+        margin-bottom: 5px;
+        color: white;
+    }
+    
+    .redes-sociais {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .fa-brands {
+        margin-right: 1rem;
+        color: white;
+    }
+  
+  }
