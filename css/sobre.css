@@ -107,8 +107,9 @@ header.scrolling a {
 }
 
 .nav-list {
-    display: flex;
+    display: flex; /* Exibe os itens em linha */
     align-items: center;
+    margin-right: 5rem; /* Centraliza os itens verticalmente */
 }
 
 .nav-list ul {
