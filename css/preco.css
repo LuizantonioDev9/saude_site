@@ -122,7 +122,8 @@ header.scrolling a {
 /* Preco */
 .form-container {
     width: 820px;
-    background: linear-gradient(180deg, rgba(37, 12, 128, 0.5) 0%, rgba(93, 79, 141, 0.25) 100%);    padding: 20px;
+    background: linear-gradient(180deg, rgba(37, 12, 128, 0.5) 0%, rgba(93, 79, 141, 0.25) 100%);    
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     border-radius: 10px;
