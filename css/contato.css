@@ -102,7 +102,6 @@ header.scrolling a {
     align-items: center;
     justify-content: center;
     margin: 250px;
-    width: 1500px;
     height: 400px;
     position: relative;
     padding-bottom: 150px;
@@ -199,8 +198,7 @@ h1 {
     justify-content: center;
     align-items: flex-start;
     padding-top: 10px;
-    position: relative; /* Define position como relative */
-    z-index: 1; /* Z-index menor que o header, para garantir que ele fique por baixo */
+    position: relative; /* Define position como relative */ /* Z-index menor que o header, para garantir que ele fique por baixo */
 }
 
 .contato {
@@ -431,7 +429,7 @@ dialog {
   
     .containers {
         width: 100%;
-        height: 50%;
+        height: 120%;
         margin: auto;
     }
 

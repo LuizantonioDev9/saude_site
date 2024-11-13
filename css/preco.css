@@ -230,8 +230,7 @@ h2 {
     justify-content: center;
     align-items: flex-start;
     padding-top: 10px;
-    position: relative; /* Define position como relative */
-    z-index: 1; /* Z-index menor que o header, para garantir que ele fique por baixo */
+    position: relative; /* Define position como relative */ /* Z-index menor que o header, para garantir que ele fique por baixo */
 }
 
 .contato {
