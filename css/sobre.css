@@ -161,7 +161,7 @@ header.scrolling a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image:linear-gradient(rgba(68, 68, 68, 0.5), rgba(87, 85, 85, 0.5)), url(/assets/imagens/chemist-2815640_12801.png);
+    background-image:url(/assets/imagens/chemist-2815640_12801.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
