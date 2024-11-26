@@ -111,7 +111,7 @@ header.scrolling a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image:linear-gradient(rgba(68, 68, 68, 0.5), rgba(87, 85, 85, 0.5)), url(/assets/imagens/chemist-2815640_1280\ 1.png);
+  background-image:linear-gradient(rgba(68, 68, 68, 0.5), rgba(87, 85, 85, 0.5)), url(/assets/imagens/modulos_imagem.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -188,8 +188,9 @@ header.scrolling a {
 }
 
 .card-img {
-  height: 350px;
-  width: 350px;
+  padding: 4rem 0 4rem 0;
+  height: 400px;
+  width: 400px;
 }
 
 
@@ -469,8 +470,8 @@ dialog {
   
   
   .card-img {
-      height: 200px;
-      width: 200px;
+      height: 350px;
+      width: 350px;
   }
 
   
