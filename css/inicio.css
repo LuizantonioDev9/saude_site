@@ -489,14 +489,16 @@ main .container {
     margin-bottom: 10px;
 }
 
+.endereco {
+    font-size: .8rem;
+}
+
+
 .numero {
     font-size: .8rem;
     font-weight: 600;
 }
 
-.endereco {
-    font-size: .8rem;
-}
 
 .politica {
     font-size: .8rem;
