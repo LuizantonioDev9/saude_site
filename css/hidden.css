@@ -2,34 +2,34 @@
     opacity: 0;
     filter: blur(15px);
     transform: translateX(-100%);
-    transition: all .9s ease-in-out;
+    transition: all 1s ease-out;
 }
 
 .hiddenZ{
     opacity: 0;
     filter: blur(15px);
     transform: translateX(-90%);
-    transition: all .9s ease-in-out;
+    transition: all 1s ease-out;
 }
 
 .hiddenY {
     opacity: 0;
     filter: blur(15px);
-    transform: translateY(100%);
-    transition: all .9s ease-in-out;
+    transform: translateY(200%);
+    transition: all 1s ease-out;
 }
 
 .hiddenYNeg {
     opacity: 0;
     filter: blur(15px);
     transform: translateY(-200%);
-    transition: all .9s ease-in-out;
+    transition: all 1s ease-in;
 }
 .show {
     opacity: 1;
     transform: translateX(0%);
     filter: blur(0);
-    transition:  .9s ease-out;
+    transition:  1s ease-out;
 }
 
 .logos {
