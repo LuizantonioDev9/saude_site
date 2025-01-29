@@ -73,7 +73,7 @@ header.scrolling .button-login-item {
 .nav-list {
     display: flex; /* Exibe os itens em linha */
     align-items: center;
-    margin-right: 5rem; /* Centraliza os itens verticalmente */
+    margin-right: 10rem; /* Centraliza os itens verticalmente */
 }
 
 /* Lista dentro da navegação */
@@ -297,7 +297,7 @@ main .container {
 /* banner com contato */
 .banner {
     content: "";
-    background-image: url(/assets/imagens/call-center.png);
+    background-image: url(/assets/imagens/call-center1.png);
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -490,10 +490,16 @@ main .container {
 }
 
 .numero {
+    font-size: .8rem;
     font-weight: 600;
 }
 
+.endereco {
+    font-size: .8rem;
+}
+
 .politica {
+    font-size: .8rem;
     font-weight: 600;
     text-decoration: underline white;
     text-decoration-thickness: .1rem;
