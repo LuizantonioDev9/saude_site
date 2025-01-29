@@ -85,17 +85,18 @@ header.scrolling a {
 }
 
 .login-button button {
-  border: none;
-  background-color: #250C80;
-  padding: 15px 25px;
+  border: none; /* Remove a borda */
+  background-color: #250C80; /* Cor de fundo azul escuro */
+  padding: 15px; /* Espaçamento interno no botão */
   border-radius: 5px;
+  width: 150px; /* Bordas arredondadas */
 }
 
 .login-button button a {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: .9rem;
 }
 
 .mobile-menu {
@@ -253,13 +254,13 @@ header.scrolling a {
 }
 
 .endereco {
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .numero {
   font-weight: 600;
   color: white;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 .politica {
@@ -353,11 +354,6 @@ dialog {
       
   }
   
-  .nav-bar {
-      padding: 1.5rem 4rem;
-      width: 400px;
-      
-  }
 
   .nav-item {
       display: none;
@@ -497,41 +493,39 @@ dialog {
   }
 
   .roda-pe {
-      width: 100%;
-      height: 70vh;
-      display: flex;
-      flex-direction: column;
-  }
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
 
-  .contato {
-      width: 100%;
-      margin: 0;
-      align-items: center;
-      height: 50%;
-  }
+.contato {
+  width: 100%;
+  margin: 0;
+  align-items: center;
+}
 
-  .redes-footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      
-  }
-  
-  .redes-footer h2{
-      display: flex;
-      flex-direction: column;
-      margin-left: 7px;
-      margin-bottom: 5px;
-      color: white;
-  }
-  
-  .redes-sociais {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-  }
+.redes-footer {
+  width: 100%;
+  margin: 0;
+  align-items: center;
+}
+
+.redes-footer h2 {
+  margin-top: 20px;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.copyright p {
+  font-size: .9rem;
+}
+
   
   .fa-brands {
       margin-right: 1rem;

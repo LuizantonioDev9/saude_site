@@ -83,12 +83,13 @@ header.scrolling a {
 .login-button {
     display: flex;
     align-items: center;
+    width: 150px;
 }
 
 .login-button button {
     border: none;
     background-color: #250C80;
-    padding: 15px 25px;
+    padding: 15px;
     border-radius: 5px;
 }
 
@@ -96,8 +97,8 @@ header.scrolling a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
-    font-size: 1.1rem;
-}
+    font-size: .9rem;
+  }
 
 .mobile-menu {
     display: none;
@@ -106,8 +107,6 @@ header.scrolling a {
 .mobile-menu-icon {
     display: none;
 }
-
-
 
 
 .containers {
@@ -230,7 +229,7 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 10px;
+    padding-top: 40px;
     position: relative; /* Define position como relative */ /* Z-index menor que o header, para garantir que ele fique por baixo */
 }
 
@@ -250,13 +249,13 @@ h2 {
 }
 
 .endereco {
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 .numero {
     font-weight: 600;
     color: white;
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 .politica {
@@ -349,12 +348,7 @@ dialog {
         transition: .1s ease-in-out;
         
     }
-    
-    .nav-bar {
-        padding: 1.5rem 4rem;
-        width: 400px;
-        
-    }
+
   
     .nav-item {
         display: none;
@@ -483,7 +477,7 @@ dialog {
   
     .roda-pe {
         width: 100%;
-        height: 70vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
     }
@@ -492,31 +486,29 @@ dialog {
         width: 100%;
         margin: 0;
         align-items: center;
-        height: 50%;
     }
-  
+
     .redes-footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         width: 100%;
-        
+        margin: 0;
+        align-items: center;
     }
-    
-    .redes-footer h2{
-        display: flex;
-        flex-direction: column;
-        margin-right: 1.50rem;
-        margin-bottom: 5px;
-        color: white;
+
+    .redes-footer h2 {
+        margin-top: 20px;
     }
-    
+
     .redes-sociais {
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-left: 15px;
     }
+
+    .copyright p {
+        font-size: .9rem;
+    }
+
     
     .fa-brands {
         margin-right: 1rem;

@@ -108,7 +108,7 @@ header.scrolling .button-login-item {
 .login-button button {
     border: none; /* Remove a borda */
     background-color: #250C80; /* Cor de fundo azul escuro */
-    padding: 15px 25px; /* Espaçamento interno no botão */
+    padding: 15px; /* Espaçamento interno no botão */
     border-radius: 5px;
     width: 150px; /* Bordas arredondadas */
 }
@@ -118,7 +118,7 @@ header.scrolling .button-login-item {
     text-decoration: none; /* Remove a linha sob o texto */
     color: #fff; /* Define a cor branca para o texto */
     font-weight: 500; /* Define o peso do texto */
-    font-size: 1.1rem; /* Define o tamanho do texto */
+    font-size: .9rem; /* Define o tamanho do texto */
 }
 
 /* Menu móvel, escondido por padrão */
@@ -490,18 +490,18 @@ main .container {
 }
 
 .endereco {
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 
 .numero {
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 
 .politica {
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: underline white;
     text-decoration-thickness: .1rem;
@@ -549,8 +549,14 @@ main .container {
 }
 
 
+
+
 /* Design responsivo*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
+
+    * {
+        box-sizing: border-box;
+      }
 
     .content-img {
         margin-top: 40px;
@@ -578,9 +584,6 @@ main .container {
         transition: .1s ease-in-out;
     }
     
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
 
     .nav-item {
         display: none;
@@ -740,7 +743,8 @@ main .container {
     }
 
     .text-banner {
-        font-size: 1rem;
+        margin: 10px;
+        font-size: .8rem;
     }
 
     .redes {
@@ -770,7 +774,7 @@ main .container {
 
     .roda-pe {
         width: 100%;
-        height: 70vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
     }
@@ -779,7 +783,6 @@ main .container {
         width: 100%;
         margin: 0;
         align-items: center;
-        height: 50%;
     }
 
     .redes-footer {
@@ -797,6 +800,10 @@ main .container {
         flex-direction: row;
         align-items: center;
         margin-left: 15px;
+    }
+
+    .copyright p {
+        font-size: .9rem;
     }
 
   }
@@ -859,4 +866,4 @@ main .container {
         color: white;
     }
 
-  }
+  } 
