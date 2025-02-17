@@ -1,11 +1,12 @@
 document.querySelector('.contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Previne o envio até a validação
+    event.preventDefault(); // Previne o envio padrão
 
     let isValid = true;
 
     // Seleciona os campos do formulário
     const name = document.getElementById('name');
     const email = document.getElementById('email');
+    const company = document.getElementById('company');
     const message = document.getElementById('message');
 
     // Seleciona os elementos de erro
@@ -46,9 +47,29 @@ document.querySelector('.contact-form').addEventListener('submit', function(even
 
     // Se tudo estiver válido, envia o formulário
     if (isValid) {
-        alert('Formulário enviado com sucesso!');
-        // Abaixo você pode adicionar o código para enviar os dados para um servidor, se necessário.
-        // Por enquanto, vamos apenas limpar o formulário:
-        document.querySelector('.contact-form').reset();
+        // Cria um objeto com os dados do formulário
+        const formData = new FormData();
+        formData.append('nome', name.value.trim());
+        formData.append('email', email.value.trim());
+        formData.append('empresa', company.value.trim());
+        formData.append('mensagem', message.value.trim());
+
+        // Envia os dados para o PHP usando fetch
+        fetch('processa_formulario.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === "sucesso") {
+                alert(data.mensagem);
+                document.querySelector('.contact-form').reset(); // Limpa o formulário
+            } else {
+                alert("Erro: " + data.mensagem);
+            }
+        })
+        .catch(error => {
+            console.error("Erro na requisição:", error);
+        });
     }
 });

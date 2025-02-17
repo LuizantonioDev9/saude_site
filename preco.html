@@ -51,47 +51,45 @@
         
         <section class="containers">
             <h2 class="price-title">Preços</h2>
-            <div class="form-container">
+            <form action="enviar_preco.php" method="POST" class="form-container">
                 <label for="computadores">Quantidade de computadores:</label>
-                <input type="text" id="computadores" placeholder="Digite aqui">
+                <input type="text" id="computadores" name="computadores" placeholder="Digite aqui">
                 
                 <div class="checkbox-group">
                     <label>Selecione o que deseja informatizar:</label><br>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="laboratorio">
+                        <input type="checkbox" id="laboratorio" name="opcoes[]" value="Laboratório">
                         <label for="laboratorio">Laboratório</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="postos-coleta">
+                        <input type="checkbox" id="postos-coleta" name="opcoes[]" value="Postos de Coletas">
                         <label for="postos-coleta">Postos de Coletas</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="equipamentos">
+                        <input type="checkbox" id="equipamentos" name="opcoes[]" value="Equipamentos para Interface">
                         <label for="equipamentos">Equipamentos para Interface</label>
                     </div>
                 </div>
                 
-                
                 <label for="nome">Nome*</label>
-                <input type="text" id="nome" required>
+                <input type="text" id="nome" name="nome" required>
                 
                 <label for="email">Email*</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" name="email" required>
                 
                 <label for="telefone">Telefone/Celular*</label>
                 <div class="phone-group">
-                    <input type="tel" id="telefone" required>
+                    <input type="tel" id="telefone" name="telefone" required>
                 </div>
                 
-                <button class="submit-btn">Receber Proposta</button>
-            </div>
-        </section>
-        
+                <button type="submit" class="submit-btn">Receber Proposta</button>
+            </form>
+        </section>   
         
     </main>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://wa.me/5571993440014?text=Adorei%20seu%20artigo" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+    <a href="https://wa.me/5571993440014?text=Ol%C3%A1%20%F0%9F%98%80%20Preciso%20de%20ajuda!" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
         z-index:1000;" target="_blank">
         <i style="margin-top:16px" class="fa fa-whatsapp"></i>
     </a>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/contato.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="shortcut icon" href="./assets/saudesystems/saude_systems_1entrega23_32.png" type="image/x-icon">
 </head>
 <body>    
@@ -65,16 +66,16 @@
                     </div>
                 </div>
         
-                <form class="contact-form">
-                    <input type="text" id="name" placeholder="Nome" required>
+                <form action="enviar_contato.php" method="POST" class="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Nome" required>
                     <small id="nameError" class="error"></small>
                 
-                    <input type="email" id="email" placeholder="E-mail" required>
+                    <input type="email" id="email" name="email" placeholder="E-mail" required>
                     <small id="emailError" class="error"></small>
                 
-                    <input type="text" id="company" placeholder="Empresa">
+                    <input type="text" id="company" name="company" placeholder="Empresa">
                 
-                    <textarea id="message" placeholder="Mensagem" required></textarea>
+                    <textarea id="message" name="message" placeholder="Mensagem" required></textarea>
                     <small id="messageError" class="error"></small>
                 
                     <button type="submit">Enviar</button>
@@ -86,7 +87,7 @@
     </main>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://wa.me/5571993440014?text=Adorei%20seu%20artigo" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+    <a href="https://wa.me/5571993440014?text=Ol%C3%A1%20%F0%9F%98%80%20Preciso%20de%20ajuda!" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
         z-index:1000;" target="_blank">
         <i style="margin-top:16px" class="fa fa-whatsapp"></i>
     </a>
